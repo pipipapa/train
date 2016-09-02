@@ -1,0 +1,36 @@
+.container{width:800px;margin:0
+auto}.autocomplete-suggestions{margin-left:-1px;border:1px
+solid #ddd;background:#FFF;cursor:default;overflow:auto}.autocomplete-suggestion{padding:4px
+5px;white-space:nowrap;overflow:hidden;background:#fff;color:#666;line-height:16px}.autocomplete-no-suggestion{padding:4px
+5px;background:#ffebea;color:#fb3b39}.autocomplete-selected{background:#63ca33;color:#fff}.autocomplete-group{padding:4px
+5px}.autocomplete-group
+strong{font-weight:bold;font-size:12px;color:#000;display:block;border-bottom:1px solid #000}.tnDateW_train
+.date_t_pre{width:auto;float:left;padding:1px;border:1px
+solid #999;border-right:none}.date_t_pre1{width:175px;float:left;padding:1px;border:1px
+solid #999;border-right:none}.date_t_pre2{width:175px;float:left;padding:1px;border:1px
+solid #999;border-right:none}.tnDateW_train
+.date_t_next{width:auto;float:left;padding:1px;border:1px
+solid #999;border-right:none}.date_t_next1{width:175px;float:left;padding:1px;border:1px
+solid #999;border-right:none}.date_t_next2{width:175px;float:left;padding:1px;border:1px
+solid #999;border-right:none}.tnDateW_train{width:auto;z-index:999;background:#fff;border-right:1px solid #999;position:absolute;overflow:hidden;_zoom:1}.tnDateW1{width:356px;z-index:999;background:#fff;border-right:1px solid #999;position:absolute;overflow:hidden;_zoom:1}.tnDateW2{width:356px;z-index:999;background:#fff;border-right:1px solid #999;position:absolute;overflow:hidden;_zoom:1}.dateSel_t{border-collapse:collapse}.tnDateW_train .dateSel_t th,.dateSel_t
+td{font-size:12px;line-height:30px;width:33px;text-align:center}.tnDateW_train .dateSel_t
+th{background:#ECECEC;font-weight:normal}.dateSel_t
+td{color:#ccc;border:1px
+solid #fff}.tnDateW_train .dateSel_t
+td.tdCobj{color:#000;cursor:pointer;font-weight:normal}.tnDateW_train .dateSel_t td.tdCobj
+strong{color:#f90}.dateSel_t
+td.tdCobjS{background-color:#ffe7ac}.dateSel_t
+td.tdCobjN{background-color:#f90;font-weight:bold;color:#fff;border:1px
+solid #fff}.tnDateW_train .dateSel_t td.tdCobjN
+strong{color:#fff}.pre_month{overflow:hidden;_zoom:1}.tnDateW_train
+.pre_month{color:#fff;text-align:center;background:#4CB100;font-size:12px;line-height:25px;position:relative}.tnDateW_train
+.next_month{color:#fff;text-align:center;background:#4CB100;font-size:12px;line-height:25px;position:relative}.pre_link{display:block;padding:0
+5px;color:#71d328;float:left;font-family:'宋体'}.next_link{display:block;padding:0
+5px;float:right;font-family:'宋体'}.pre_link:link,.pre_link:visited{text-decoration:none;color:#fff}.next_link:link,.next_link:visited{text-decoration:none;color:#fff}.tnDateW_train .pre_link:link,
+.tnDateW_train .pre_link:visited,
+.tnDateW_train .next_link:link,
+.tnDateW_train .next_link:visited{color:#4CB100;padding:0;width:16px;background-color:#eee;font-weight:bold;border-radius:8px;line-height:16px;margin:4px;padding:0
+1px 0}.tnDateW_train .pre_link:link:hover,
+.tnDateW_train .pre_link:visited:hover,
+.tnDateW_train .next_link:link:hover,
+.tnDateW_train .next_link:visited:hover{background-color:#fff}

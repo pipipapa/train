@@ -1,0 +1,297 @@
+.pkg_list_head{height:12px;padding:12px
+0 12px 15px;border:1px
+solid #e2e2e2;border-bottom:none;background:#fafafa;line-height:12px;color:#999}.pkg_list_head
+span{position:relative;float:left;height:12px;border-right:1px solid #ddd;text-align:center}.pkg_list_head
+.pkg_list_head_1{width:112px}.pkg_list_head
+.pkg_list_head_2{width:165px;margin-right:57px;border-right:none}.pkg_list_planes .pkg_list_head
+.pkg_list_head_2{margin-right:64px}.pkg_list_head
+.pkg_list_head_3{width:107px}.pkg_list_head
+.pkg_list_head_4{width:55px}.pkg_list_head
+.pkg_list_head_5{width:110px;border-right:none}.pkg_list_head
+.pkg_list_head_6{width:99px;border-right:none;text-align:left}.pkg_list_head_6
+.icon{right:-6px;top:-2px}.pkg_list_item_1{*position:relative;*top:50%}.pkg_list_item_2{*position:relative;*top:-50%}.pkg_show_detail .pkg_list_item_1,
+.pkg_show_detail
+.pkg_list_item_2{*position:static}.pkg_list_item.hover{z-index:999;border-color:#58b713;background:#fff}.pkg_list_item.selected{padding:18px
+14px 16px 14px;border:2px
+solid #58b713}.pkg_list_train.selected{padding:18px
+0 0 0}.pkg_item_planes,.pkg_item_price,.pkg_item_youhui,.pkg_item_btn{float:left}.pkg_item_planes{float:none
+padding-top: 5px}.pkg_item_plane{margin-bottom:12px}.last.pkg_item_plane{margin-bottom:0}.plane_icon_qu{float:left;width:18px;height:35px;margin-top:1px;margin-right:2px;padding:0;background:#f2f2f2;line-height:35px;font-size:12px;text-align:center;border-radius:2px;color:#bbb}.plane_info,.plane_time,.plane_type,.plane_duration{float:left}.plane_info{width:112px;margin-right:12px}.plane_top,.plane_bottom{line-height:16px;text-align:center;color:#666}.plane_top{margin-bottom:6px}.plane_top
+.icon{width:16px;height:16px;margin:0
+5px 0 8px;padding:0;vertical-align:top}.plane_info
+.plane_top{text-align:left}.plane_info
+.plane_bottom{padding-left:10px;text-align:left}.plane_time
+.plane_detail{margin-top:4px;margin-bottom:7px}.plane_time .plane_detail
+a{color:#2e9900}.plane_time .plane_detail
+.icon{width:12px;height:12px;margin:0;padding:0;background-position:-145px -89px}.plane_time .plane_detail_expand
+.icon{background-position:-145px -105px}.plane_time
+.plane_top{font-size:16px;font-weight:bold;color:#333}.plane_time{width:105px}.plane_duration{position:relative;width:90px}.plane_duration
+.icon{position:absolute;left:0;top:0;z-index:1;display:block;width:90px;height:12px;margin:-5px 0 0 0;background-position:0 -119px}.plane_duration
+.plane_top{height:18px;margin-bottom:0;text-align:center}.plane_duration
+.tip{position:relative;z-index:2;display:inline-block;margin-top:-4px;background:#fff;text-align:center;color:#2e9900}.plane_duration
+.plane_bottom{height:16px;color:#999}.plane_time_end{position:relative;width:105px}.plane_time_end
+.plane_top{}.plane_time_end
+.plane_bottom{}.plane_time_end
+.tip{position:absolute;left:80px;top:0;height:13px;border-bottom:1px solid #2e9900;font-size:12px;line-height:12px;font-style:normal;color:#2e9900}.plane_type{width:55px}.pkg_item_price{width:110px;*width:100px;text-align:center}.pkg_change
+.pkg_item_price{width:215px;*width:200px;text-align:center}.pkg_item_price
+div{display:inline-block;height:28px;font:bold 24px/28px "Tahoma";color:#f60;vertical-align:middle}.pkg_item_price
+span{display:block}.pkg_item_price
+i{font-size:14px;font-family:"microsoft yahei";line-height:28px;font-style:normal;vertical-align:top;*vertical-align:middle}.pkg_item_youhui{width:85px;*width:80px;margin-right:2px;margin-top:5px}.pkg_item_youhui_inner{position:relative}.pkg_item_youhui
+div{width:auto;height:16px;margin:0;font-size:12px;color:#fff}.pkg_item_youhui
+span{position:relative;display:inline-block;width:auto;height:16px;margin:0;padding-left:28px;line-height:16px;overflow:hidden;background:url(/site/css/images/lijian.png) right 0 no-repeat}.pkg_item_youhui
+i{position:absolute;left:0;top:0;width:28px;height:16px;line-height:0;background:url(/site/css/images/lijian.png) left 0 no-repeat}.pkg_item_youhui
+em{padding:0
+4px;color:#f80;font-style:normal}.pkg_item_youhui .pkg_item_youhui_inner
+.tip_con{text-align:center}.pkg_item_btn{width:128px;*width:127px}.pkg_show_detail
+.pkg_item_btn{width:69px}.pkg_item_btn
+div{width:auto;height:24px;margin-bottom:3px}.pkg_item_btn
+span{position:relative;display:inline-block;width:auto;height:24px}.pkg_item_btn
+.btn{display:inline-block;width:66px;height:25px;margin:0;padding:0;background-color:#ff9419;font-size:12px;line-height:24px;color:#fff;text-align:center}.pkg_item_btn .btn:hover{background-color:#f80}.pkg_item_btn
+.btngrey{display:inline-block;width:66px;height:25px;margin:0;padding:0;font-size:12px;line-height:24px;text-align:center;background-color:#eee;color:#999;cursor:not-allowed}.pkg_item_btn
+.btnselect{display:inline-block;width:66px;height:25px;margin:0;padding:0;font-size:12px;line-height:24px;color:#fff;text-align:center;background:url(/site/css/images/ticket.png) no-repeat;background-position:0 -253px}.pkg_item_btn
+.tip{position:absolute;left:0;bottom:-28px;width:100%;height:24px;line-height:24px;text-align:center;color:#2e9900}.pkg_list_ticket .price
+.tk_seat_hide{display:none}.pkg_list_ticket .price .tk_seat_disabled
+dt{color:#999}.tk_seat_name{display:inline-block;border-bottom:1px dotted #2e9900;cursor:pointer}.pkg_plane_note{*width:783px;height:34px;border-top:1px solid #eee;background:#fafafa;line-height:34px;color:#999}.w1200
+.pkg_plane_note{*width:983px}.pkg_list_train{display:block;padding:19px
+0 0 0;background:#fff}.pkg_list_train
+.pkg_plane_note{position:relative;display:block;padding-left:15px}.pkg_plane_note
+span{padding-right:25px}.pkg_plane_note
+.tip{position:absolute;right:5px;top:6px;width:67px;height:22px;line-height:22px;text-align:center;color:#2e9900}.pkg_list_train
+.pkg_item_planes{padding-left:15px}.pkg_list_train.selected .pkg_item_planes,
+.pkg_list_train.selected
+.pkg_plane_note{padding-left:14px}.pkg_list_train
+.pkg_item_youhui{margin-top:5px}.pkg_list_train .pkg_item_price
+i{*vertical-align:middle}.pkg_list_train
+.plane_detail_info{margin:0
+0 -1px 0}.pkg_list_train .pkg_item_planes,
+.pkg_list_train .pkg_item_price,
+.pkg_list_train .pkg_item_youhui,
+.pkg_list_train
+.pkg_item_btn{display:block}.pkg_list_train
+.plane_detail_arrow{left:205px}.pkg_list_train
+.pkg_item_plane{margin-bottom:10px;padding-left:20px}.pkg_list_train
+.plane_detail{float:left;width:267px;margin-top:4px;margin-bottom:0;padding-left:10px;text-align:left}.pkg_list_train .plane_detail
+a{color:#2e9900}.pkg_list_train .plane_detail
+.icon{width:12px;height:12px;margin:0;padding:0;background-position:-145px -89px}.pkg_list_train .plane_detail_expand
+.icon{background-position:-145px -105px}.pkg_list_train
+.pkg_item_youhui{}.pkg_list_train
+.pkg_item_btn{margin-top:3px}.pkg_list_change_btn{height:40px;margin:20px
+0;text-align:right}.pkg_list_change_btn
+a{display:inline-block;width:130px;height:40px;background:#ff9419;text-align:center;color:#fff;font:bold 18px/40px "microsoft yahei";border-radius:2px}.plane_time_info{float:left;width:300px}.pkg_list_change_btn a:hover{background:#f80}.selected .pkg_item_btn
+.btn{background:#42b312}.selected .pkg_item_btn
+.icon_selected{width:13px;height:13px;margin:0
+3px 0 0;padding:0;background-position:-15px -170px}.pkg_show_detail
+.plane_detail_info{}.plane_detail_info{position:relative;display:none;margin:0
+-15px;padding:24px
+0 12px 35px;border:1px
+solid #f0f0f0;border-left:none;border-right:none;background:#fbfbfb}.plane_detail_arrow{position:absolute;left:191px;top:-7px;width:13px;height:7px;margin:0;padding:0;background-position:0 -170px;font-size:0}.icon_airport{background-position:-63px -233px}.pkg_list_train
+.pkg_item_youhui{position:relative;width:80px;margin-right:2px;text-align:center}.pkg_list_train .pkg_item_youhui
+.tip{line-height:24px;color:#2e9900}.pkg_list_train
+.pkg_item_price{width:94px;text-align:center}.pkg_change .pkg_list_train
+.pkg_item_price{width:174px}.pkg_list_train
+.pkg_item_youhui{margin-top:8px}.pkg_list_train
+.pkg_item_planes{width:500px}.pkg_flight_tax_tip{display:none}.wrap_flight
+.pkg_list_head_6{display:none}.wrap_flight
+.pkg_list_head_5{width:170px}.wrap_flight
+.pkg_flight_tax_tip{display:inline}.wrap_flight .pkg_list_train
+.pkg_item_price{width:170px}.wrap_flight
+.pkg_item_planes{float:left}.pkg_item_other{position:absolute;right:0;top:20px;width:285px}.wrap_flight_pkg
+.pkg_list_item{padding-bottom:0}.wrap_flight_pkg .pkg_list_con
+.last{padding-bottom:17px}.wrap_flight_pkg .pkg_show_detail
+.last{padding-bottom:0}.wrap_flight .plane_detail_info
+.pkg_item_plane{padding-left:0}.plane_detail_info{*width:763px}.pkg_date_list
+li{line-height:22px}.pkg_date_list .pkg_date_blank,
+.pkg_date_list .pkg_date_blank a,
+.pkg_date_list .pkg_date_blank strong,
+.pkg_date_list .pkg_date_blank
+span{cursor:not-allowed}.pkg_date_list li strong,
+.pkg_date_list li
+span{line-height:22px}.pkg_date_list .pkg_date_blank
+strong{color:#bbb}.pkg_date_list li
+strong{color:#666;font-size:12px}.pkg_date_list .pkg_date_blank
+span{padding:0}.tk_slp_wrap{display:none}.tk_sleep_inf{width:288px;padding:23px
+0 0 0;border:6px
+solid #ccc;background:#fff}.tk_slp_class{padding-left:15px;margin-bottom:15px}.tk_slp_item{float:left;width:65px;height:39px;padding-left:30px;border-right:1px solid #e0e0e0}.tk_slp_item_1{padding-left:5px;text-align:left}.tk_slp_item_2{width:70px}.tk_slp_item_3{border-right:none}.tk_slp_item
+span{display:block;margin-bottom:5px;line-height:18px;color:#333}.tk_slp_item
+strong{display:block;line-height:16px;color:#f60;font-size:14px;font-family:"Microsoft YaHei";font-weight:bold}.tk_slp_item
+i{font-size:12px;font-style:normal;line-height:12px;vertical-align:top}.tk_slp_tip{padding:0
+10px 5px;line-height:22px;color:#333;font-size:12px}.tk_slp_class_2
+.tk_slp_item_1{width:90px;padding-left:40px}.tk_slp_class_2
+.tk_slp_item_2{width:80px;border-right:none;padding-left:50px}.wrap{background:#fff}.pkg_main{font-family:"microsoft yahei"}.pkg_tab_info,
+.pkg_filter_con,
+.pkg_filter_sort,
+.pkg_filter_item .slidesign,
+.pkg_filter_item .slideup,
+.pkg_list_item,
+.pkg_list_con
+.detailinfor{border:0}.pkg_info{background:#F5F5F5}.pkg_info_from,.pkg_info_to{background-color:#fff}.pkg_info_address
+input{background:#fff}.pkg_filter_con{margin:10px
+0}.pkg_date_select{background:#F5F5F5;border:1px
+solid #e2e2e2;border-bottom:1px solid #37C346;font-family:"microsoft yahei"}.pkg_date_list
+ul{margin:0}.pkg_date_list
+li{border-left-color:#f5f5f5}.pkg_date_list
+.current{border:1px
+solid #37C346;border-top:2px solid #37C346}.pkg_filter_item{border:1px
+solid #e2e2e2;border-top:0}.pkg_filter_sort{background:#F5F5F5}.pkg_filter_buxian a.checked, .pkg_filter_others a.checked, .pkg_filter_others a:hover{color:#37C346}.pkg_filter_others
+a.checked{background-color:#EDFAE9}.pkg_filter_others .checked
+.icon{border-color:#37C346;background:url(http://img2.tuniucdn.com/img/20151111/package/spirit.png) -18px -385px no-repeat}.pkg_filter_selected dd a:hover{border-color:#37C346;color:#37C346}.pkg_filter_selected a
+.icon{background:url(http://img2.tuniucdn.com/img/20151111/package/spirit.png) -64px -91px no-repeat}.pkg_filter_selected dd a:hover
+.icon{background-position:-35px -387px}.pkg_filter_item
+dl{border-bottom:0}.tk_item_wrap{margin-top:10px;border:1px
+solid #e2e2e2}.tk_item_wrap.hover{border-color:#37C346}.pkg_sort_item{width:130px;border-right:0}.pkg_sort_item_1{text-align:right;padding-right:5px;width:60px}.pkg_sort_item_2{text-align:left;padding-left:5px;width:60px}.pkg_sort_item_3{width:100px}.pkg_sort_item_4{text-align:left;padding-left:0}.pkg_sort_item_5{width:100px}.pkg_sort_item_6{width:120px;padding:11px
+0}.pkg_sort_item_6
+.icon{position:static;width:11px;height:11px;margin:0
+4px 0 0;border:1px
+solid #ddd;vertical-align:middle;padding:0;background-position:20px 20px}.pkg_list_item{padding-left:10px}.pkg_error.loading{background:#fff}.ticketbtn{background:url(http://img2.tuniucdn.com/img/20141208/train/ticket.png) no-repeat}.pkg_tab_info
+.crumbs{background:#fff;height:28px;line-height:28px}.pkg_tab_info .crumbs:after{clear:both;content:".";display:block;height:0;visibility:hidden}.pkg_tab_info .crumbs
+p{display:inline;float:left}.pkg_tab_info .crumbs p
+a{color:#2e9700}.pkg_tab_info .crumbs
+.baidu_share{float:right}.pkg_tab_info .crumbs p a:hover{color:#f60;text-decoration:underline}.pkg_tab_info .crumbs p
+span{color:#999}.pkg_tab_info .crumbs p
+i{font-family:Simsun;padding:0
+6px}.right_main{width:250px;min-height:500px;float:left}.right_main_loading{background:url(http://img2.tuniucdn.com/img/20141208/package/loading.gif) center center no-repeat}.right_main
+.box{border:1px
+solid #ddd;width:248px;background:#fff;margin-bottom:10px}.right_main .box
+.con{padding-left:10px;padding-right:10px}.right_main .box
+h2{font:16px/30px microsoft yahei;color:#333;padding-top:10px}.right_main .box
+dl{padding-top:15px;padding-bottom:15px;border-bottom:1px dotted #e7e7e7}.right_main .box
+dl.last{border-bottom:0 none}.right_main .box dd,.right_main .box
+dt{float:left}.right_main .box
+dd{width:100px;height:55px;overflow:hidden;position:relative;margin-right:8px}.right_main .box dd
+img{width:100px}.right_main .box dd
+span{width:48px;height:20px;line-height:20px;color:#fff;text-align:center;display:block;position:absolute;top:0px;left:0px;background:#7fd436}.right_main .box
+dt{width:120px}.right_main .box dt
+.name{height:36px;line-height:18px;overflow:hidden}.right_main .box dt
+.name_{height:18px;line-height:18px;overflow:hidden}.right_main .box dt
+.address{height:18px;line-height:18px;overflow:hidden;color:#999;background-position:0 -214px;padding-left:15px}.right_main .box dt .price
+span{color:#f60;font:16px microsoft yahei}.right_main .box dt .price span
+a{color:#f60;font:12px microsoft yahei}.right_main .box dt .price
+em{color:#999;float:right}.right_main .box dt .price span:first-letter {font-size:10px}.right_main .box
+ul{background:#f7f7f7}.right_main .box ul
+li{float:left;width:149px;height:30px}.right_main .box ul
+li.cur{border-top:1px solid #7fd436;background:#fff}.right_main .box ul li
+a{display:block;width:149px;line-height:30px;text-align:center;color:#333;font:18px microsoft yahei}.right_main .box
+.sel{display:none}.right_main .box
+.sel.cur{display:block}.right_main .box  .sel dd
+span{width:48px;height:20px;line-height:20px;color:#fff;text-align:center;display:block;position:absolute;top:0px;left:0px;background:#00c5b0}.norightborder{border-right:0 none}.place{background:#fff;height:40px;line-height:50px;padding-left:20px;font:24px microsoft yahei;padding-top:10px}.place
+span{color:#999;font:12px Simsun;padding-left:10px}.pkg_list_ticket
+.checi{font:20px microsoft yahei;color:#465a64;float:left;width:90px}.pkg_list_ticket .checi
+a{font-size:12px}.pkg_list_ticket
+.start{font:bold 18px Arial;color:#333;float:left;width:80px;padding-left:20px}.pkg_list_ticket .start
+span.start{font-size:12px;color:#666;font-weight:normal;font-family:Simsun;width:auto;padding:0;float:left}.pkg_list_ticket .start
+i{background-position:0px -128px;width:15px;height:15px;display:block;float:left}.pkg_list_ticket
+.time{font:12px/20px Simsun;color:#999;float:left;width:100px;text-align:center}.pkg_list_ticket
+.end{font:bold 18px Arial;color:#333;float:left;width:100px;width:80px;padding-left:20px}.pkg_list_ticket .end
+span.end{font-size:12px;color:#666;font-weight:normal;font-family:Simsun;width:auto;padding:0;float:left}.pkg_list_ticket .end
+i{background-position:0px -151px;width:15px;height:15px;display:block;float:left}.pkg_list_ticket
+.price{float:left;padding-left:20px;width:358px}.pkg_list_ticket .price
+dl{height:28px;width:358px;display:inline-block}.pkg_list_ticket .price dd,.pkg_list_ticket .price
+dt{float:left}.pkg_list_ticket .price
+dd{width:70px;font:12px Simsun;color:#666;line-height:22px}.pkg_list_ticket .price dt
+span.pri{width:80px;font:bold 18px Arial;float:left}.pkg_list_ticket .price dd
+span.wopu{border-bottom:2px dotted #0092d2;position:relative}.pkg_list_ticket .price dd span.wopu
+.popbox{position:absolute;top:-155px;left:25px;padding:15px;width:260px;height:120px;border:5px
+solid #ccc;background:#fff;z-index:10;*+z-index:300;display:none}.pkg_list_ticket .price dd span.wopu .popbox
+li{float:left;border-right:1px solid #eee;height:40px;width:66px;padding-left:20px;line-height:20px}.pkg_list_ticket .price dd span.wopu .popbox li
+span{font:bold 14px Arial;color:#f60}.pkg_list_ticket .price dd span.wopu .popbox
+li.last{border-right:0 none}.pkg_list_ticket .price dd span.wopu .popbox
+.down{margin-top:10px}.pkg_list_ticket .price dd span.wopu .popbox
+a.close{width:10px;height:10px;display:block;position:absolute;top:10px;right:10px;color:#666;font-size:18px}.pkg_list_ticket .price
+dt{font:bold 16px Arial;color:#f60}.pkg_list_ticket .price
+dt.grey{font:bold 16px Arial;color:#999;width:308px;height:24px}.pkg_list_ticket .price dt
+span{font:normal 12px Arial;float:left}.pkg_list_con
+.detailinfor{height:auto;max-height:270px;background-color:#f0f0f0;border:1px
+solid #e2e2e2;display:none;padding-bottom:20px;position:relative;overflow:auto}.pkg_list_con
+.loading{background:url(http://img3.tuniucdn.com/img/20141216/package/loading.gif) center center no-repeat;height:100px}.pkg_list_con .detailinfor
+.con{overflow-x:hidden;*height:auto;text-align:center}.pkg_list_con .detailinfor .con
+img{margin:0
+auto;display:block}.pkg_list_con .detailinfor
+tr{height:30px;color:#333}.pkg_list_con .detailinfor
+tr.tit{color:#999}.pkg_list_con .detailinfor
+td{width:156px;padding-left:20px}.pkg_list_con .detailinfor td
+em{display:block;width:18px;height:18px;margin:0
+auto;text-align:center;border-radius:18px;line-height:18px;background:#fff}.pkg_list_con
+.shouqi{display:none;width:50px;height:15px;position:absolute;bottom:0px;left:50%;margin-left:-25px;background:#37C346;color:#fff;text-align:center;line-height:15px}.pkg_list_ticket .tk_add
+.tk_add_click{float:right;color:#2E9900;font-size:14px;margin:10px
+33px;padding:3px
+0 0 4px;cursor:pointer;display:block;border:1px
+solid #2E9900;height:25px;width:66px}.pkg_list_ticket .tk_add
+.tk_add_inf{float:left;color:#2E9900;font-size:14px;cursor:pointer;border-bottom:1px dotted #2E9900;margin:10px
+0px 0px 500px}.pkg_list_ticket
+.tk_add{height:20px}.tk_item_wrap{position:relative;width:888px}.tkAddInfor{background-color:#e0e0e0}.tk_no_ticket{background-color:#FFFCEB;border:1px
+solid #FFDBB2;color:#666;height:25px;padding:6px
+0 0 20px}.tkAddInfor
+.pkg_list_item{background-color:#e0e0e0}.tkAddInfor
+.tk_item_wrap{margin-top:0}.in_area_list{background-color:#e0e0e0}.out_area_list{background-color:#e0e0e0}.search_more{color:#37C346;cursor:pointer;display:none}.search_more
+.search_more_btn{width:150px;margin-left:750px}.tk_add_note{width:210px;height:60px;border:2px
+solid #e0e0e0;z-index:9999;padding:9px
+10px 4px 10px;display:none;font:13px "microsoft yahei";color:#666;position:absolute;margin-top:4px;left:490px;background-color:#fff}.search_more
+.shouqi{display:none;width:50px;height:15px;position:absolute;bottom:0px;left:50%;margin-left:-25px;background:#37C346;color:#fff;text-align:center;line-height:15px}.pkg_list_con
+.loadingUpon{background:url(http://img3.tuniucdn.com/img/20141216/package/loading.gif) 250px center no-repeat;height:100px;text-align:center;display:block;border-top:1px solid #E2E2E2}.calNote{color:#666;font:15px "microsoft yahei";padding-top:40px}.tk_item_wrap
+.lastRow{list-style-type:none;font-size:15px;float:left;margin-right:10px}.tk_item_wrap .lastRow
+a{color:blue}.pkg_list_con .detailinfor
+.through_disabled{color:#999}.pkg_list_con .detailinfor .through_disabled td
+em{background-color:#e0e0e0}.tn-divmask{background:#000;opacity:0.2;_filter:alpha(opacity=20);width:100%;height:100000px;position:fixed;top:0;left:0}.popping-box{position:fixed;padding:6px;z-index:100;margin:100px;left:50%;top:170px;margin-left:-206px;display:none}.popping-box .popping-box-border{background-color:#ccc;position:absolute;width:100%;height:100%;top:0;left:0;z-index:101}.popping-box .popping-box-content{background-color:#fff;position:relative;z-index:102;width:340px;height:100px;position:relative}.des-pos{text-align:center;color:#656565;font-size:14px;padding:40px
+0 0 10px;height:40px;width:200px;margin:0
+auto}.yanzheng{background-position:-178px -218px}.yuding{background-position:0 -309px}.wupiao{background-position:0 -409px}.pkg_date_list
+ul{position:absolute;left:0;top:0;font-size:0;line-height:0;text-indent:0;white-space:nowrap}.pkg_date_list
+li{display:inline-block;*display:inline;zoom:1;float:none}.fc-grid .fc-other-month .fc-day-number{opacity:1}.fc-day-number{color:#999}.tk_calendar_enabled .fc-day-number{color:#333;font-weight:bold}.pkg_sort_item_id_0{width:50px}.index1200
+.right_main{width:300px}.index1200 .right_main .box
+.con{padding-left:20px;padding-right:20px}.index1200 .right_main .box
+dt{width:150px}.index1200 .right_main
+.box{width:298px}.index1200 .right_main .first-pay{font-size:0}.index1200 .right_main .first-pay
+img{width:100%}.index1200 .pkg_list_ticket
+.checi{width:200px}.index1200 .pkg_list_ticket
+.price{width:320px}.index1200 .pkg_list_ticket .price
+dl{width:340px}.index1200 .pkg_list_ticket .price dt
+span.pri{width:130px}.index1200
+.pkg_sort_item_id_0{width:180px}.orderbook_dialog_loading,.dialog_tip,.error_loading{width:415px;margin:0
+auto;padding:25px;line-height:26px;color:#333;font-size:16px}.orderbook_dialog_loading{text-align:center}.orderbook_loading .pkg_error_con
+h3{line-height:72px;color:#666;font-size:16px}.orderbook_dialog_loading .pkg_error_con
+h3{color:#666;font-size:16px}.orderbook_dialog_loading
+.msg{text-align:left}.orderbook_dialog_loading
+img{vertical-align:text-top;margin:3px
+5px 0 0}.orderbook_dialog_loading
+.dialog_btn{height:32px;width:52px;text-align:center;margin-top:10px}.orderbook_dialog_loading .dialog_btn
+a.btn_ok{display:inline-block;padding:8px
+10px;font-size:16px;color:#FFF;background-color:#43B413;height:16px;line-height:16px;border-radius:2px 2px 2px 2px;cursor:pointer}.error_loading
+.pkg_error_con{display:inline-block;zoom:1;height:56px;padding:5px
+0 0 96px;background:url(http://img2.tuniucdn.com/img/20141208/package/tn-error.png) 0 0 no-repeat}.orderbook_loading
+.pkg_error_con{min-height:72px;height:auto;background:url(http://img2.tuniucdn.com/img/20141208/package/loading.gif) 0 0 no-repeat}.xubox_setwin
+.xubox_close0{background-image:url(http://img4.tuniucdn.com/img/20141227/train/tk_spirit.png);background-repeat:no-repeat;width:22px;height:22px;margin-left:0;background-position:-56px -40px}.xubox_setwin .xubox_close0:hover{background-position:-56px -40px}.place{padding-left:0;padding-top:0}.place
+span{color:#000}.index1200
+.pkg_sort_item_id_0{width:50px}.index1200 .pkg_list_ticket
+.checi{width:90px;padding-left:10px}.pkg_list_ticket .checi
+.stopping{color:#2E9900}.pkg_list_ticket .checi .stopping
+span{font-size:10px}.pkg_list_ticket{font:14px microsoft yahei;width:863px;clear:both}.pkg_list_ticket
+br{clear:both}.pkg_list_ticket
+.time{font:20px microsoft yahei;color:#333;float:left;width:105px;padding-left:20px}.pkg_list_ticket .time
+.startTime{color:#333;float:left;width:80px;text-align:left}.pkg_list_ticket .time
+.endTime{font-size:15px;color:#666;font-weight:normal;width:auto;padding:0;float:left;margin:5px
+0}.pkg_list_ticket
+.station{font:12px/20px microsoft yahei;color:#999;float:left;width:120px;padding-left:40px}.pkg_list_ticket .station
+span{font-size:14px;color:#666;float:left;margin:5px
+0}.pkg_list_ticket .station
+span.departStation{margin:0}.pkg_list_ticket .station
+i{background:url(http://img2.tuniucdn.com/img/20141208/train/ticket.png) no-repeat;background-position:0 -128px;width:15px;height:15px;display:inline-block}.pkg_list_ticket .station i.icon-1{background-position:0 -151px}.pkg_list_ticket .station i.icon-2{background-position:-999px -999px}.pkg_list_ticket
+.duration{font:14px microsoft yahei;color:#666;float:left;width:100px;text-align:center;padding-top:2px}.pkg_list_ticket .price dt
+span.left{width:100px;height:20px;font:12px microsoft yahei;color:#333}.index1200 .pkg_list_ticket
+.price{width:358px}.index1200 .pkg_list_ticket .price
+dl{width:358px;margin-bottom:6px}.pkg_list_ticket .price
+dd{width:50px}.index1200 .pkg_list_ticket .price
+dt{margin-top:2px;font-size:18px;width:308px}.index1200 .pkg_list_ticket .price dt
+span.pri{width:80px;font-size:100%}.index1200 .pkg_list_ticket .price dt
+span.left{width:100px;display:inline-block;line-height:20px;height:20px;font:12px microsoft yahei;color:#333;text-align:center}.pkg_item_btn{width:60px;padding-left:20px}.pkg_sort_item_6.checked
+.icon{background:url(http://img2.tuniucdn.com/img/20151110/package/spirit.png) -32px -89px no-repeat}.leftLess{border:1px
+solid #F26033;color:#F26033;background:#FEF9F8}.tkAddInfor
+.price{width:320px}.J_PkgInfoItem .pkg_info_item
+.APP_buy{color:#2e9900;float:left;margin-top:6px;width:145px}.J_PkgInfoItem .pkg_info_item .APP_buy
+.APP_buy_icon{position:relative;top:-5px}.J_PkgInfoItem .pkg_info_item .APP_buy
+.APP_buy_title{left:-8px;position:relative;z-index:1000}.J_PkgInfoItem .pkg_info_item .APP_buy
+.APP_arrow{left:-8px;position:relative}.J_PkgInfoItem .pkg_info_item
+.APP_buy_detail{position:absolute;right:180px;display:none}.more-flight{color:#2e9900;float:right;display:none}.more-flight
+span{cursor:pointer}.recommend-flight{height:45px;padding-top:22px;margin-top:22px;border:1px
+solid #e2e2e2;padding-left:25px;display:none;font-size:16px}.recommend-flight .flight-title{width:25%;float:left}.recommend-flight .flight-title .flight-icon{background:url('http://img4.tuniucdn.com/img/20160106/train/flight-icon.png') no-repeat;width:40px;height:40px;background-size:32px 18px;float:left;background-position:0 4px}.recommend-flight .flight-title .flight-name{color:#23CC77}.recommend-flight .flight-date{width:15%;float:left}.recommend-flight .flight-city{width:33%;float:left}.recommend-flight .flight-city
+.orgCityName{float:left}.recommend-flight .flight-city .arrow-city{background:url('http://img4.tuniucdn.com/img/20160106/train/arrow_city.png') no-repeat;width:50px;height:20px;background-size:50px 10px;background-position:0 5px;float:left}.recommend-flight .flight-city
+.dstCityName{float:left}.recommend-flight .flight-price{float:left}.recommend-flight .flight-price .price-logo{font-size:12px;color:#F50;display:inline}.recommend-flight .flight-price
+.price{color:#F50;display:inline}.recommend-flight .flight-price .price-start{font-size:12px;display:inline}.recommend-flight .flight-btn{width:15%;float:right;font-size:12px}.recommend-flight .flight-btn
+.btn{display:inline-block;width:66px;height:25px;margin:0;padding:0;background-color:#ff9419;font-size:12px;line-height:24px;color:#fff;text-align:center;cursor:pointer}
