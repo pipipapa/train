@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
+
+	<context:component-scan base-package="cn.lq.lagou"/>
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+	<mvc:annotation-driven/>
+	<mvc:resources mapping="*.html" location="/" />
+	<mvc:resources mapping="/style/images/**" location="/style/images/" />
+	<mvc:resources mapping="/style/js/**" location="/style/js/" />
+	<mvc:resources mapping="/style/css/**" location="/style/css/" />
+	<mvc:resources mapping="/user/**" location="/user/" />
+	<mvc:resources mapping="/company/**" location="/company/" />
+	
+	
+	<context:property-placeholder location="classpath:db.properties" />
+	<bean id="ds" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driver}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.name}" />
+		<property name="password" value="${jdbc.pass}" />
+	</bean>
+	<bean id="sf" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="ds"/>
+		<property name="configLocation" value="classpath:mybatis-config.xml"/>
+	</bean>
+	
+	<!--配置Mapper的扫描  -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="cn.lq.lagou.position.dao.dao,cn.lq.lagou.invite.dao.dao" />
+		<property name="sqlSessionFactoryBeanName" value="sf" />
+	</bean>
+	
+	<bean id="tm" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="ds"/>
+	</bean>
+	<tx:annotation-driven transaction-manager="tm" />
+</beans>
