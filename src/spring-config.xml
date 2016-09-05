@@ -40,7 +40,11 @@
 	
 	<!--配置Mapper的扫描  -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="cn.lq.lagou.position.dao.dao,cn.lq.lagou.invite.dao.dao" />
+		<property name="basePackage" 
+			value="train,
+					
+					"/>
+			 		
 		<property name="sqlSessionFactoryBeanName" value="sf" />
 	</bean>
 	
