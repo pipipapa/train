@@ -14,7 +14,6 @@
 	
 	
 	<mappers>
-	   <mapper resource="cn/lq/lagou/position/dao/dao/PositionMapper.xml"/>
-	   <mapper resource="cn/lq/lagou/invite/dao/dao/InviteMapper.xml"/>
+	   <mapper resource="train/user/dao/dao/UserMapper.xml"/>
 	</mappers>
 </configuration>
