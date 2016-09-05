@@ -10,11 +10,13 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
 
 	<context:component-scan base-package="train"/>
+	
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/"/>
 		<property name="suffix" value=".jsp"/>
 	</bean>
 	<mvc:annotation-driven/>
+	
 	<mvc:resources mapping="*.html" location="/" />
 	<mvc:resources mapping="/manager/images/**" location="/manager/images/" />
 	<mvc:resources mapping="/manager/js/**" location="/manager/js/" />
@@ -40,11 +42,7 @@
 	
 	<!--配置Mapper的扫描  -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" 
-			value="train,
-					
-					"/>
-			 		
+		<property name="basePackage" value="train"/>
 		<property name="sqlSessionFactoryBeanName" value="sf" />
 	</bean>
 	
