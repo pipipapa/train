@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lagou.login.user.dao.dao.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.lagou.login.user.dao.vo.User" >
+    <id column="account" property="account" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="validateCode" property="validatecode" jdbcType="VARCHAR" />
+    <result column="limits" property="limits" jdbcType="INTEGER" />
+    <result column="registerTime" property="registertime" jdbcType="DATE" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    account, password, validateCode, limits, registerTime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from user
+    where account = #{account,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from user
+    where account = #{account,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.lagou.login.user.dao.vo.User" >
+    insert into user (account, password, validateCode, 
+      limits, registerTime)
+    values (#{account,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{validatecode,jdbcType=VARCHAR}, 
+      #{limits,jdbcType=INTEGER}, #{registertime,jdbcType=DATE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.lagou.login.user.dao.vo.User" >
+    insert into user
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="account != null" >
+        account,
+      </if>
+      <if test="password != null" >
+        password,
+      </if>
+      <if test="validatecode != null" >
+        validateCode,
+      </if>
+      <if test="limits != null" >
+        limits,
+      </if>
+      <if test="registertime != null" >
+        registerTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="account != null" >
+        #{account,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="validatecode != null" >
+        #{validatecode,jdbcType=VARCHAR},
+      </if>
+      <if test="limits != null" >
+        #{limits,jdbcType=INTEGER},
+      </if>
+      <if test="registertime != null" >
+        #{registertime,jdbcType=DATE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lagou.login.user.dao.vo.User" >
+    update user
+    <set >
+      <if test="password != null" >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="validatecode != null" >
+        validateCode = #{validatecode,jdbcType=VARCHAR},
+      </if>
+      <if test="limits != null" >
+        limits = #{limits,jdbcType=INTEGER},
+      </if>
+      <if test="registertime != null" >
+        registerTime = #{registertime,jdbcType=DATE},
+      </if>
+    </set>
+    where account = #{account,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lagou.login.user.dao.vo.User" >
+    update user
+    set password = #{password,jdbcType=VARCHAR},
+      validateCode = #{validatecode,jdbcType=VARCHAR},
+      limits = #{limits,jdbcType=INTEGER},
+      registerTime = #{registertime,jdbcType=DATE}
+    where account = #{account,jdbcType=VARCHAR}
+  </update>
+</mapper>

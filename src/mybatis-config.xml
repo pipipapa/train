@@ -9,7 +9,7 @@
 		<setting name="aggressiveLazyLoading" value="false"/>
 	</settings>
 	<typeAliases>
-		<package name="cn.lq.lagou"/>
+		<package name="train"/>
 	</typeAliases>
 	
 	

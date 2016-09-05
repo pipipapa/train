@@ -40,11 +40,7 @@
 	
 	<!--配置Mapper的扫描  -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" 
-			value="train,
-					
-					"/>
-			 		
+		<property name="basePackage" value="train"/>
 		<property name="sqlSessionFactoryBeanName" value="sf" />
 	</bean>
 	
