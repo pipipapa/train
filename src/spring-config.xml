@@ -39,7 +39,8 @@
 	<!--配置Mapper的扫描  -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="train.admin.dao.dao,
-											train.user.dao.dao
+											train.user.dao.dao,
+											train.conductor.dao.dao
 											"/>
 		<property name="sqlSessionFactoryBeanName" value="sf" />
 	</bean>
