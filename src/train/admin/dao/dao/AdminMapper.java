@@ -9,5 +9,5 @@ import train.admin.dao.vo.Admin;
 @Repository
 public interface AdminMapper {
 
-	public List<Admin> QurryAll();
+	public List<Admin> QueryAll();
 }
