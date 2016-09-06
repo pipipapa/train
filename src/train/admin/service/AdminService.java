@@ -12,11 +12,11 @@ import train.admin.dao.vo.Admin;
 public class AdminService {
 	
 	@Autowired
-	AdminMapper mapping;
+	AdminMapper mapper;
 	
-	public List<Admin> QurryAll()
+	public List<Admin> QueryAll()
 	{
-		List<Admin> alist=mapping.QurryAll();
+		List<Admin> alist=mapper.QueryAll();
 		return alist;
 	}
 

@@ -9,7 +9,7 @@
 
 
 
-<select id="QurryAll" resultType="train.admin.dao.vo.Admin">
+<select id="QueryAll" resultType="train.admin.dao.vo.Admin">
 SELECT * FROM admin
 </select>
 
