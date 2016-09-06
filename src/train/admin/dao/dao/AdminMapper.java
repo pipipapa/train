@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import train.admin.dao.vo.Admin;
 
 @Repository
-public interface AdminMapping {
+public interface AdminMapper {
 
 	public List<Admin> QurryAll();
 }

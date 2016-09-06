@@ -15,5 +15,6 @@
 	
 	<mappers>
 	   <mapper resource="train/user/dao/dao/UserMapper.xml"/>
+	   <mapper resource="train/admin/dao/dao/AdminMapping.xml"/>
 	</mappers>
 </configuration>
