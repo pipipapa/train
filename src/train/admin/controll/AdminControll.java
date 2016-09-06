@@ -31,6 +31,7 @@ public class AdminControll {
 		List<Admin> alist=adminService.QueryAll();
 		if(name==null)
 		{
+			System.out.println("该账号00！！");
 			mv.setViewName("/login.html");
 		}
 		else
@@ -47,10 +48,15 @@ public class AdminControll {
 			if(num==null)
 			{
 				System.out.println("没有该账号！！");
+				mv.setViewName("redirect:login.html");
 			}
 			else if(pass.equals(alist.get(num).getPass()))
 			{
 				mv.setViewName("redirect:index.html");
+			}
+			else
+			{
+				mv.setViewName("redirect:login.html");
 			}
 		}
 		return mv;

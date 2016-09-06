@@ -15,11 +15,7 @@
 	
 	<mappers>
 	   <mapper resource="train/user/dao/dao/UserMapper.xml"/>
-<<<<<<< HEAD
-	   <mapper resource="train/admin/dao/dao/AdminMapping.xml"/>
 	   <mapper resource="train/conductor/dao/dao/ConductorMapping.xml"/>
-=======
 	   <mapper resource="train/admin/dao/dao/AdminMapper.xml"/>
->>>>>>> branch 'master' of https://github.com/pipipapa/train.git
 	</mappers>
 </configuration>
