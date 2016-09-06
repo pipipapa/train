@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="train.admin.dao.dao.ConductorMapper">
+	<resultMap id="ConResultMap" type="train.conductor.dao.vo.Conductor" >
+    <id column="id" property="id"/>
+    <result column="name" property="name"/>
+    <result column="pass" property="pass"/>
+    <result column="cno" property="cno"/>
+  </resultMap>
+<select id="selectById" resultMap="ConResultMap" parameterType="Integer">
+	select * from conductor where id = #{id}
+</select>
+
+<select id="selectByName" resultMap="ConResultMap" parameterType="String" >
+    select * from conductor where name = #{name}
+ </select>
+
+<delete id="deleteById" parameterType="Integer">
+	delete from conductor where id = #{id}
+</delete>
+
+<insert id="insert" parameterType="train.conductor.dao.vo.Conductor">
+	insert into conductor values(null,#{name},#{pass},#{cno})
+</insert>
+
+<update id="update" parameterType="train.conductor.dao.vo.Conductor">
+	update conductor set name = #{name},pass = #{pass},cno = #{cno} where id = #{id}
+</update>
+
+</mapper>
