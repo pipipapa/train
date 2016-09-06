@@ -18,12 +18,8 @@
 	<mvc:annotation-driven/>
 	
 	<mvc:resources mapping="*.html" location="/" />
-	<mvc:resources mapping="/manager/images/**" location="/manager/images/" />
-	<mvc:resources mapping="/manager/js/**" location="/manager/js/" />
-	<mvc:resources mapping="/manager/css/**" location="/manager/css/" />
-	<mvc:resources mapping="/conductor/images/**" location="/conductor/images/" />
-	<mvc:resources mapping="/conductor/js/**" location="/conductor/js/" />
-	<mvc:resources mapping="/conductor/css/**" location="/conductor/css/" />
+	<mvc:resources mapping="/admin/**" location="/admin/" />
+	<mvc:resources mapping="/conductor/**" location="/conductor/" />
 	<mvc:resources mapping="/user/**" location="/user/" />
 	
 	
@@ -42,7 +38,9 @@
 	
 	<!--配置Mapper的扫描  -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="train"/>
+		<property name="basePackage" value="train.admin.dao.dao,
+											train.user.dao.dao
+											"/>
 		<property name="sqlSessionFactoryBeanName" value="sf" />
 	</bean>
 	
