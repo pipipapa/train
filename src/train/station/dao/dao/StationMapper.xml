@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="train.station.dao.dao.StationMapper">
+  
+  <select id="QueryAll" resultType="Station">
+  	SELECT * FROM station
+  </select>
+  
+  <insert id="add" parameterType="Station">
+  	INSERT INTO station VALUES (NULL,#{time},#{name})
+  </insert>
+  
+  <update id="update" parameterType="Station">
+  	UPDATE station set name=#{name},time=#{time} where id=#{id} 
+  </update>
+  
+  <delete id="delete" parameterType="int">
+  	delete from station where id=#{id}
+  </delete>
+  
+  <select id="QueryById" parameterType="int" resultType="Station">
+  	select * from station where id=#{id}
+  </select>
+  
+  </mapper>
+  
+  
+  

@@ -16,7 +16,7 @@ public class AdminControll {
 	@Autowired
 	AdminService adminService;
 
-	@RequestMapping("/QueryAll")
+	@RequestMapping("/QueryAdmin")
 	public ModelAndView QurryAll()
 	{
 		ModelAndView mv=new ModelAndView();
@@ -24,7 +24,7 @@ public class AdminControll {
 		return mv;
 	}
 	
-	@RequestMapping("admin/AdminLogin")
+	@RequestMapping("/admin/AdminLogin")
 	public ModelAndView login(String name,String pass)
 	{
 		ModelAndView mv=new ModelAndView();

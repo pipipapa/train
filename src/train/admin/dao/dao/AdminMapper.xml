@@ -6,9 +6,6 @@
 <mapper namespace="train.admin.dao.dao.AdminMapper">
 
 
-
-
-
 <select id="QueryAll" resultType="train.admin.dao.vo.Admin">
 SELECT * FROM admin
 </select>
