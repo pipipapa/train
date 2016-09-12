@@ -1,0 +1,93 @@
+售票员：id、账号、密码、工号、姓名
+管理员：账号、密码
+用户表：
+Id number primary key,
+uname varchar2(30),--用户名
+Pass varchar2(20),--密码
+name varchar2(20),  --姓名
+Cardtype number,-- 1 2 3 证件类型
+Idnumber varchar2（18）,--证件号
+Sex --0男1女
+birthday Date,  --生日
+Tel  number(11), 手机
+Email varchar2(20),  邮箱
+Type --1成人 2儿童 3学生 4残疾军人
+乘客表：
+Id
+Nmae
+Cardtype number,-- 1 2 3
+Idnumber varchar2（18）,--证件号
+Type --1成人 2儿童 3学生 4残疾军人
+
+相邻站点表bstation
+Id number primary key,
+Time number,--相邻时间
+NextStation   --下一站ID
+Moneny0 number,--商务座
+Moneny1 number,--一等座
+Moneny2 number,--二等座
+Moneny3 number,--无座
+
+Station 站点表
+id number primary key,
+Station varchar2(20), 站点
+Time   --停留时间  (单位：分钟)
+
+
+路线表line
+Id number,
+Station1 varchar2(20), 始发站
+Station2 varchar2(20),
+Station3varchar2(20),
+Station4 varchar2(20),
+Station5 varchar2(20),
+Station6 varchar2(20),
+Station7 varchar2(20),
+Station8 varchar2(20),
+Station9 varchar2(20),
+Station10 varchar2(20),
+Station11 varchar2(20),
+Station12 varchar2(20),
+Station13varchar2(20),
+Station14 varchar2(20),
+Station15 varchar2(20),
+Station16 varchar2(20),
+Station17 varchar2(20),
+Station18 varchar2(20),
+Station19 varchar2(20),
+Station20 varchar2(20),
+Station21 varchar2(20),
+Station22 varchar2(20),
+Station23varchar2(20),
+Station24 varchar2(20),
+Station25 varchar2(20),
+Station26 varchar2(20),
+Station27 varchar2(20),
+Station28 varchar2(20),
+Station29 varchar2(20),
+Station30 varchar2(20)
+
+
+Train车次表
+ Id number pramiry key,
+ Tname varchar2(20),车次名
+ Start varchar2(20), --始发站
+ End varchar2(20), --终点站
+ SDate ,--出发时间
+ Edate date,--到达时间
+ Number  int,--车票总数
+ 
+Ticket车票表
+Id number pramiry key, 格式：年月日+4位数
+Tid number,  车次id
+Uid 
+Buydate 购买时间
+Start varchar2(20), --起始站
+End varchar2(20), --目的地
+Stime Date,--始发时间
+Etime DAte,--到达时间
+Type number,座位类型
+Insurance numnber, 0-未购买，1 -10元，2 -20元
+TimeNumber number，--所需时间
+State, --状态 0 -已预订，1 -已退票，2 -已使用
+Seat varchar2(20),--座位号
