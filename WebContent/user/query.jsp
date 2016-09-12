@@ -69,7 +69,7 @@ function selectTag(showContent,selfObj){    var tag = document.getElementById("t
     		<c:if test="${user.name==null}">
     			<span style="margin-left: 30px">欢迎您：${user.email}</span>
     		</c:if>
-    		<a href="" target="_blank" style="margin-left: 30px;font-style: inherit;">修改信息</a>
+    		<a href="update.jsp" target="_blank" style="margin-left: 30px;font-style: inherit;">修改信息</a>
     	</c:if>
     </div>
     <div class="banner_pic" id="bannerPic">

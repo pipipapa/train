@@ -1,7 +1,98 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="train.user.dao.dao.UserMapper" >
-  <select id="selectAll" resultType="train.user.dao.vo.User">
-  	select * from user
+  <select id="queryByEmail" parameterType="String" resultType="User">
+  	select * from user where email = #{email}
   </select>
+  <insert id="insert" parameterType="User">
+  	insert into user
+  <trim prefix="(" suffix=")" suffixOverrides="," >
+  	<if test="name!=null">
+  		name,
+  	</if>
+  	<if test="pass!=null">
+  		pass,
+  	</if>
+  	<if test="cardtype!=0">
+  		cardtype,
+  	</if>
+  	<if test="idnumber!=null">
+  		idnumber,
+  	</if>
+  	<if test="sex!=0">
+  		sex,
+  	</if>
+  	<if test="birthday!=null">
+  		birthday,
+  	</if>
+  	<if test="tel!=null">
+  		tel,
+  	</if>
+  	<if test="email!=null">
+  		email,
+  	</if>
+  	<if test="type!=0">
+  		type,
+  	</if>
+  </trim>
+  <trim prefix="values (" suffix=")" suffixOverrides="," >
+  	<if test="name!=null">
+  		#{name},
+  	</if>
+  	<if test="pass!=null">
+  		#{pass},
+  	</if>
+  	<if test="cardtype!=0">
+  		#{cardtype},
+  	</if>
+  	<if test="idnumber!=null">
+  		#{idnumber},
+  	</if>
+  	<if test="sex!=0">
+  		#{sex},
+  	</if>
+  	<if test="birthday!=null">
+  		#{birthday},
+  	</if>
+  	<if test="tel!=null">
+  		#{tel},
+  	</if>
+  	<if test="email!=null">
+  		#{email},
+  	</if>
+  	<if test="type!=0">
+  		#{type},
+  	</if>
+  </trim>
+  </insert>
+  <update id="updateByEmail" parameterType="User">
+  	update user
+  	<set >
+     <if test="name!=null">
+  		name=#{name},
+  	</if>
+  	<if test="pass!=null">
+  		pass=#{pass},
+  	</if>
+  	<if test="cardtype!=0">
+  		cardtype=#{cardtype},
+  	</if>
+  	<if test="idnumber!=null">
+  		idnumber=#{idnumber},
+  	</if>
+  	<if test="sex!=0">
+  		sex=#{sex},
+  	</if>
+  	<if test="birthday!=null">
+  		birthday=#{birthday},
+  	</if>
+  	<if test="tel!=null">
+  		tel=#{tel},
+  	</if>
+  	<if test="type!=0">
+  		type=#{type},
+  	</if>
+    </set>
+    where email = #{email}
+  </update>
 </mapper>
