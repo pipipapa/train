@@ -1,9 +1,11 @@
 package train.station.controll;
 
+import java.io.PrintWriter;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.portlet.bind.annotation.ResourceMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -23,7 +25,6 @@ public class StationControll {
 	public ModelAndView add(Station s)
 	{
 		ModelAndView mv=new ModelAndView();
-		System.out.println(s.getTime());
 		service.add(s);
 		mv.setViewName("redirect:QueryStation");
 		return mv;
@@ -34,7 +35,6 @@ public class StationControll {
 	{
 		ModelAndView mv=new ModelAndView();
 		List<Station> slist=service.QueryAll();
-		System.out.println(slist.size());
 		mv.addObject("slist", slist);
 		mv.addObject("num", 5);
 		mv.setViewName("/admin/QueryStation0");
@@ -45,18 +45,18 @@ public class StationControll {
 	public ModelAndView toUpdate(int id)
 	{
 		ModelAndView mv=new ModelAndView();
-		Station station=service.QueryById(id);
-		mv.addObject("station", station);
+		Station s=service.QueryById(id);
+		mv.addObject("s", s);
 		mv.setViewName("admin/UpdateStation0");
 		return mv;
 	}
 	
-	@ResourceMapping("admin/UpdateStation")
+	@RequestMapping("admin/UpdateStation")
 	public ModelAndView Update(Station s)
 	{
 		ModelAndView mv=new ModelAndView();
 		service.update(s);
-		mv.setViewName("redirect:admin/QueryStation");
+		mv.setViewName("redirect:QueryStation");
 		return mv;
 	}
 	
@@ -67,5 +67,13 @@ public class StationControll {
 		service.delete(id);
 		mv.setViewName("redirect:admin/QueryStation");
 		return mv;
+	}
+	
+	@RequestMapping("admin/QueryByName")
+	public void QueryByName(String sname,PrintWriter out)
+	{
+		Station s=service.QueryByName(sname);
+		int sid=s.getId();
+		out.print("{\"sid\":\""+sid+"\"}");
 	}
 }

@@ -52,4 +52,11 @@ public class StationService implements StationMapper {
 		return s;
 	}
 
+	@Override
+	public Station QueryByName(String name) {
+
+		Station s=mapper.QueryByName(name);
+		return s;
+	}
+
 }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="train.bstation.dao.dao.BstationMapper">
+  <select id="QueryAll" resultType="Bstation">
+  	select * from bstation
+  </select>
+  
+  
+  <select id="QueryById" resultType="Bstation" parameterType="int">
+  	select * from bstation where id=#{id}
+  </select>
+  
+  <select id="QueryBySelf" resultType="Bstation" parameterType="int">
+  	select * from bstation where selfstation=#{selfstation}
+  </select>
+  
+  <select id="QueryByNext" resultType="Bstation" parameterType="int">
+  	select * from bstation where nextstation=#{nextstation}
+  </select>
+  
+  <delete id="delete" parameterType="int">
+  	delete from bstation where id=#{id}
+  </delete>
+  
+  <insert id="add" parameterType="Bstation">
+  	insert into bstation values (null,#{time},#{selfstation},#{selfname},#{nextstation},#{nextname},#{money0},#{money1},#{money2},#{money3})
+  </insert>
+  
+  <update id="update" parameterType="Bstation">
+  	update Bstation set time=#{time},selfstation=#{selfstation},selfname=#{selfname},nextstation=#{nextstation},nextname=#{nextname},money0=#{money0},money1=#{money1},money2=#{money2},money3=#{money3} where id=#{id}
+  </update>
+  
+  
+  </mapper>

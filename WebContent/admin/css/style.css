@@ -208,5 +208,10 @@ h2
 {
 	font-size: 30px;
 }
-
+input
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	vertical-align:middle;
+}
 
