@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="train.admin.dao.dao.ConductorMapper">
+<mapper namespace="train.conductor.dao.dao.ConductorMapper">
 	<resultMap id="ConResultMap" type="train.conductor.dao.vo.Conductor" >
     <id column="id" property="id"/>
     <result column="name" property="name"/>
