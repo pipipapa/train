@@ -1,5 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
 <mapper namespace="train.line.dao.dao.LineMapper" >
+  
+   <select id="QueryAll" resultType="Line">
+  	select * from line
+  </select>
+  
+  <insert id="add" parameterType="Line">
+  	insert into line values (NULL,#{name},
+  							#{station1},#{station2},#{station3},#{station4},#{station5},
+  							#{station6},#{station7},#{station8},#{station9},#{station10},
+  							#{station11},#{station12},#{station13},#{station14},#{station15},
+  							#{station16},#{station17},#{station18},#{station19},#{station20},
+  							#{station21},#{station22},#{station23},#{station24},#{station25},
+  							#{station26},#{station27},#{station28},#{station29},#{station30},
+  							#{station31},#{station32},#{station33},#{station34},#{station35})
+  </insert>
+  
+  <update id="update" parameterType="Line">
+  	update line set name=#{name},
+			  		station1=#{station1},
+			  		station2=#{station2},
+			  		station3=#{station3},
+			  		station4=#{station4},
+			  		station5=#{station5},
+					station6=#{station6},
+					station7=#{station7},
+					station8=#{station8},
+					station9=#{station9},
+					station10=#{station10},
+					station11=#{station11},
+					station12=#{station12},
+					station13=#{station13},
+					station14=#{station14},
+					station15=#{station15},
+					station16=#{station16},
+					station17=#{station17},
+					station18=#{station18},
+					station19=#{station19},
+					station20=#{station20},
+					station21=#{station21},
+					station22=#{station22},
+					station23=#{station23},
+					station24=#{station24},
+					station25=#{station25},
+					station26=#{station26},
+					station27=#{station27},
+					station28=#{station28},
+					station29=#{station29},
+					station30=#{station30},
+					station31=#{station31},
+					station32=#{station32},
+					station33=#{station33},
+					station34=#{station34},
+					station35=#{station35} 
+											where id=#{id} 
+  </update>
+  
+  <delete id="delete" parameterType="int">
+  	delete from line where id=#{id}
+  </delete>
+  
+  <select id="QueryById" parameterType="int" resultType="Line">
+  	select * from line where id=#{id}
+  </select>
+  
+  <select id="QueryByName" parameterType="String" resultType="Line">
+  	select * from line where name=#{name}
+  </select>
   
 </mapper>

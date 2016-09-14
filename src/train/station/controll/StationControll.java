@@ -36,7 +36,6 @@ public class StationControll {
 		ModelAndView mv=new ModelAndView();
 		List<Station> slist=service.QueryAll();
 		mv.addObject("slist", slist);
-		mv.addObject("num", 5);
 		mv.setViewName("/admin/QueryStation0");
 		return mv;
 	}
@@ -65,7 +64,7 @@ public class StationControll {
 	{
 		ModelAndView mv=new ModelAndView();
 		service.delete(id);
-		mv.setViewName("redirect:admin/QueryStation");
+		mv.setViewName("redirect:QueryStation");
 		return mv;
 	}
 	
@@ -81,16 +80,13 @@ public class StationControll {
 	public void IsStaion(String sname,PrintWriter out)
 	{
 		Station s=service.QueryByName(sname);
-		System.out.println(sname);
 		if(s==null)
 		{
 			out.print("{\"IsStation\":\"false\"}");
-			System.out.println(sname+"N");
 		}
 		else
 		{
 			out.print("{\"IsStation\":\"Y\"}");
-			System.out.println(sname+"true");
 		}
 	}
 	
