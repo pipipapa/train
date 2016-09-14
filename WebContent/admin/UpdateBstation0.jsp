@@ -27,7 +27,7 @@
 	    		 >${s.name}</option>
 	    	</c:forEach>
 	    </select><br>
-	    本 站 I D：<input name="selfstation" id="selfstation" value="${b.selfstation}" disabled="true" type="text" class="textbox textbox_225" placeholder="请选择站点名称！"/><br>
+	    本 站 I D：<input name="selfstation" id="selfstation" value="${b.selfstation}" readonly="readonly" type="text" class="textbox textbox_225" placeholder="请选择站点名称！"/><br>
 	    
 	     下一站名称：<select name="nextname" id="nextname" class="select">
 	    	<option>——请选择站点——</option>
@@ -39,7 +39,7 @@
 	    		  >${s.name}</option>
 	    	</c:forEach>
 	    </select><br>
-	   下一站ID：<input name="nextstation" id="nextstation" value="${b.nextstation}" disabled="true" type="text" class="textbox textbox_225" placeholder="请选择站点名称！"/><br>
+	   下一站ID：<input name="nextstation" id="nextstation" value="${b.nextstation}" readonly="readonly" type="text" class="textbox textbox_225" placeholder="请选择站点名称！"/><br>
 	    
 	    
 	    商务座票价：<input name="money0" type="text" value="${b.money0}" class="textbox textbox_295" placeholder="商务座票价"/><br>

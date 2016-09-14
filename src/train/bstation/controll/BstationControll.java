@@ -80,6 +80,7 @@ public class BstationControll {
 	{
 		ModelAndView mv=new ModelAndView();
 		service.update(b);
+		System.out.println(b.getNextstation()+"---"+b.getSelfstation());
 		mv.setViewName("redirect:QueryBstation");
 		return mv;
 	}
