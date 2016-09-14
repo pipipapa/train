@@ -1,42 +1,12 @@
 package train.line.dao.vo;
 
-/**
- *Id number,
- *Station1 varchar2(20), Ê¼·¢Õ¾
- *Station2 varchar2(20),
- *Station3 varchar2(20),
- *Station4 varchar2(20),
- *Station5 varchar2(20),
- *Station6 varchar2(20),
- *Station7 varchar2(20),
- *Station8 varchar2(20),
- *Station9 varchar2(20),
- *Station10 varchar2(20),
- *Station11 varchar2(20),
- *Station12 varchar2(20),
- *Station13varchar2(20),
- *Station14 varchar2(20),
- *Station15 varchar2(20),
- *Station16 varchar2(20),
- *Station17 varchar2(20),
- *Station18 varchar2(20),
- *Station19 varchar2(20),
- *Station20 varchar2(20),
- *Station21 varchar2(20),
- *Station22 varchar2(20),
- *Station23varchar2(20),
- *Station24 varchar2(20),
- *Station25 varchar2(20),
- *Station26 varchar2(20),
- *Station27 varchar2(20),
- *Station28 varchar2(20),
- *Station29 varchar2(20),
- *Station30 varchar2(20)
- * @author llz
- *
- */
-public class line {
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class Line {
+	
 	private int id;
+	private String name;
 	private String station1;
 	private String station2;
 	private String station3;
@@ -67,6 +37,45 @@ public class line {
 	private String station28;
 	private String station29;
 	private String station30;
+	private String station31;
+	private String station32;
+	private String station33;
+	private String station34;
+	private String station35;
+	
+	
+	
+	
+	public String getStation31() {
+		return station31;
+	}
+	public void setStation31(String station31) {
+		this.station31 = station31;
+	}
+	public String getStation32() {
+		return station32;
+	}
+	public void setStation32(String station32) {
+		this.station32 = station32;
+	}
+	public String getStation33() {
+		return station33;
+	}
+	public void setStation33(String station33) {
+		this.station33 = station33;
+	}
+	public String getStation34() {
+		return station34;
+	}
+	public void setStation34(String station34) {
+		this.station34 = station34;
+	}
+	public String getStation35() {
+		return station35;
+	}
+	public void setStation35(String station35) {
+		this.station35 = station35;
+	}
 	public int getId() {
 		return id;
 	}
@@ -252,5 +261,11 @@ public class line {
 	}
 	public void setStation30(String station30) {
 		this.station30 = station30;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 }
