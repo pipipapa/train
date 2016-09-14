@@ -12,21 +12,31 @@
 </head>
 <body>
 	<h2>修改相邻站点</h2>
-	<form action="AddBstation" method="post">
+	<form action="UpdateBstaiton" method="post">
+		<input name="id" value="${b.id}" type="hidden">
+	
 	    驶过两站时间：<input name="time" type="text" value="${b.time}" class="textbox textbox_295" placeholder="驶过两站时间（分钟）"/><br>
 	    
 	    本 站 名 称：<select name="selfname" id="selfname" class="select">
 	    	<option>——请选择站点——</option>
 	    	<c:forEach var="s" items="${slist}">
-	    	<option>${s.name}</option>
+	    		<option value="${s.name}" 
+	    		
+	    			<c:if test="${b.selfname==s.name}">selected="selected"</c:if>
+	    		
+	    		 >${s.name}</option>
 	    	</c:forEach>
 	    </select><br>
-	    本 站 I D额：<input name="selfstation" id="selfstation" value="heheda" disabled="true" type="text" class="textbox textbox_225" placeholder="请选择站点名称！"/><br>
+	    本 站 I D：<input name="selfstation" id="selfstation" value="${b.selfstation}" disabled="true" type="text" class="textbox textbox_225" placeholder="请选择站点名称！"/><br>
 	    
 	     下一站名称：<select name="nextname" id="nextname" class="select">
 	    	<option>——请选择站点——</option>
 	    	<c:forEach var="s" items="${slist}">
-	    		<option value="${s.name}">${s.name}</option>
+	    		<option value="${s.name}" 
+	    		
+	    			<c:if test="${b.nextname==s.name}">selected="selected"</c:if>
+	    		
+	    		  >${s.name}</option>
 	    	</c:forEach>
 	    </select><br>
 	   下一站ID：<input name="nextstation" id="nextstation" value="${b.nextstation}" disabled="true" type="text" class="textbox textbox_225" placeholder="请选择站点名称！"/><br>
