@@ -13,7 +13,7 @@
 <body>
 	<h2>新增相邻站点</h2>
 	<form action="AddBstation" method="post">
-	    <input name="time" type="text" class="textbox textbox_295" placeholder="驶过两站时间（分钟）"/><br>
+	    <input name="time" type="text" id="time" class="textbox textbox_295" placeholder="驶过两站时间（分钟）"/><br>
 	    
 	    本 站 名 称：<select name="selfname" id="selfname" class="select">
 	    	<option>——请选择站点——</option>
@@ -32,10 +32,10 @@
 	   下一站ID：<input name="nextstation" id="nextstation" readonly="readonly" type="text" class="textbox textbox_225" placeholder="请选择站点名称！"/><br>
 	    
 	    
-	    <input name="money0" type="text" class="textbox textbox_295" placeholder="商务座票价"/><br>
-	    <input name="money1" type="text" class="textbox textbox_295" placeholder="一等座票价"/><br>
-	    <input name="money2" type="text" class="textbox textbox_295" placeholder="二等座票价"/><br>
-	    <input name="money3" type="text" class="textbox textbox_295" placeholder="站票票价"/><br>
+	    <input name="money0" id="money0" type="text" class="textbox textbox_295" placeholder="商务座票价"/><br>
+	    <input name="money1" id="money1" type="text" class="textbox textbox_295" placeholder="一等座票价"/><br>
+	    <input name="money2" id="money2" type="text" class="textbox textbox_295" placeholder="二等座票价"/><br>
+	    <input name="money3" id="money3" type="text" class="textbox textbox_295" placeholder="站票票价"/><br>
 	    <input type="submit" value="提交" class="group_btn"/><br>
 	</form>
 	
@@ -67,6 +67,19 @@ $("#nextname").change(function(){ //事件发生
 		},"json");
 	}); 
 });
+
+$("#time").blur(function(){
+
+	var time=($("#time").val());
+	$("#money0").val(2*time);
+	$("#money1").val(1*time);
+	$("#money2").val(Math.round(0.7*time));
+	$("#money3").val(Math.round(0.5*time));
+	
+	
+});
+
+
 
 </script>
 	

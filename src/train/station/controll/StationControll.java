@@ -69,11 +69,29 @@ public class StationControll {
 		return mv;
 	}
 	
-	@RequestMapping("admin/QueryByName")
+	@RequestMapping("admin/QueryByName")//根据名字查询站点的ID
 	public void QueryByName(String sname,PrintWriter out)
 	{
 		Station s=service.QueryByName(sname);
 		int sid=s.getId();
 		out.print("{\"sid\":\""+sid+"\"}");
 	}
+	
+	@RequestMapping("admin/IsStation")//判断该站点的名字是否重复,重复true
+	public void IsStaion(String sname,PrintWriter out)
+	{
+		Station s=service.QueryByName(sname);
+		System.out.println(sname);
+		if(s==null)
+		{
+			out.print("{\"IsStation\":\"false\"}");
+			System.out.println(sname+"N");
+		}
+		else
+		{
+			out.print("{\"IsStation\":\"Y\"}");
+			System.out.println(sname+"true");
+		}
+	}
+	
 }

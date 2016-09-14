@@ -215,3 +215,15 @@ input
 	vertical-align:middle;
 }
 
+.error
+{
+	color: red;
+}
+
+form[class="leftform"]
+{
+	text-align: left;
+	margin-left: 35%;
+}
+
+

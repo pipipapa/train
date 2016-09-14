@@ -4,13 +4,37 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
 </head>
 <body>
 	<h2>新增站点</h2>
-	<form action="AddStation" method="post">
-	    <input name="name" type="text" class="textbox textbox_295" placeholder="站点名称"/><br>
+	<form action="AddStation" method="post" class="leftform">
+	    <input name="name" type="text" id="name" class="textbox textbox_295" placeholder="站点名称"/>
+	    <span id="nameError" class="error"></span><br>
 	    <input name="time" type="text" class="textbox textbox_295" placeholder="停留时间（分钟）"/><br>
 	    <input type="submit" value="提交" class="group_btn"/><br>
 	</form>
+	
+<script type="text/javascript">
+
+	$("#name").blur(function(){ //事件發生 
+		
+		var sname=$("#name").val();
+		$.post("IsStation",{sname:sname},function(data){
+			
+			if(data.IsStation=="Y")
+			{
+				$("#nameError").text("站点名称重复，请重新输入");
+			}
+			else
+			{
+				$("#nameError").text("");
+			}
+		},"json");
+});
+	
+</script>
+	
 </body>
 </html>
+
