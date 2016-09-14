@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="train.ticket.dao.dao.TicketMapper">
+	<resultMap id="TicketResultMap" type="train.ticket.dao.vo.Ticket" >
+    <id column="id" property="id"/>
+    <result column="buydate" property="buydate"/>
+    <result column="sstation" property="sstation"/>
+    <result column="estation" property="estation"/>
+    <result column="stime" property="stime"/>
+    <result column="etime" property="etime"/>
+    <result column="btime" property="btime"/>
+    <result column="type" property="type"/>
+    <result column="seat" property="seat"/>
+    <result column="price" property="price"/>
+    <result column="insurance" property="insurance"/>
+    <result column="state" property="state"/>
+    <association property="u" javaType="user">
+    	<result column="uid" property="id"/>
+    	<result column="uname" property="name"/>
+    	<result column="pass" property="pass"/>
+    	<result column="cardtype" property="cardtype"/>
+    	<result column="idnumber" property="idnumber"/>
+    	<result column="sex" property="sex"/>
+    	<result column="birthday" property="birthday"/>
+    	<result column="tel" property="tel"/>
+    	<result column="email" property="email"/>
+    	<result column="type" property="type"/>
+    </association>
+  </resultMap>
+<select id="selectById" resultMap="TicketResultMap" parameterType="Integer">
+	select * from ticket where id = #{id}
+</select>
+
+<select id="selectByName" resultMap="TicketResultMap" parameterType="String" >
+    select * from ticket where name = #{name}
+ </select>
+
+<delete id="deleteById" parameterType="Integer">
+	delete from ticket where id = #{id}
+</delete>
+
+<insert id="insert" parameterType="train.ticket.dao.vo.Ticket">
+	insert into ticket values(null,#{name},#{pass},#{cno})
+</insert>
+
+<update id="update" parameterType="train.ticket.dao.vo.Ticket">
+	update ticket set name = #{name},pass = #{pass},cno = #{cno} where id = #{id}
+</update>
+
+</mapper>
