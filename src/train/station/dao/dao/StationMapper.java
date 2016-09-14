@@ -16,4 +16,6 @@ public interface StationMapper {
 	
 	public Station QueryById(int id);
 	
+	public Station QueryByName(String name);
+	
 }

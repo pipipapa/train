@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="http://img1.tuniucdn.com/s/2014041208/common/reset.css,common/layout.css,common/foot.css,404/404page.css,header/header.css,404/404-500.css"/>
 <title>404 Not Found_您要访问的页面不存在_途牛旅游网</title>
 <style>
-.my-choice li { width: 113px; height: 181px; padding: 10px 39px; margin:0;float: left; display: inline; cursor: pointer; }
+.my-choice li { width: 113px; height: 181px; padding: 10px  39px; margin:0;float: left; display: inline; cursor: pointer; }
 .i-like{width:340px;}
 .com-nav{text-align:right;}
 .com-nav a{float:none;}

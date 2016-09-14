@@ -26,6 +26,10 @@
   	select * from station where id=#{id}
   </select>
   
+  <select id="QueryByName" parameterType="String" resultType="Station">
+  	select * from station where name=#{name}
+  </select>
+  
   </mapper>
   
   

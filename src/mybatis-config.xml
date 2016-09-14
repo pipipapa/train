@@ -18,6 +18,7 @@
 	   <mapper resource="train/conductor/dao/dao/ConductorMapper.xml"/>
 	   <mapper resource="train/admin/dao/dao/AdminMapper.xml"/>
 	   <mapper resource="train/station/dao/dao/StationMapper.xml"/>
+	   <mapper resource="train/bstation/dao/dao/BstationMapper.xml"/>
 	   <mapper resource="train/line/dao/dao/LineMapper.xml"/>
 	</mappers>
 </configuration>
