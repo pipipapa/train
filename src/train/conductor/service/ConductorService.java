@@ -13,8 +13,6 @@ public class ConductorService {
 	private ConductorMapper cmapper;
 	
 	public Conductor selectByName(String name){
-//		Conductor c=cmapper.selectByName(name);
-//		return c;
 		return cmapper.selectByName(name);
 	}
 	

@@ -19,7 +19,7 @@
     <result column="state" property="state"/>
     <association property="u" javaType="user">
     	<result column="uid" property="id"/>
-    	<result column="uname" property="name"/>
+    	<result column="name" property="name"/>
     	<result column="pass" property="pass"/>
     	<result column="cardtype" property="cardtype"/>
     	<result column="idnumber" property="idnumber"/>
@@ -29,14 +29,28 @@
     	<result column="email" property="email"/>
     	<result column="type" property="type"/>
     </association>
+    <association property="tr" javaType="train">
+   		<result column="tid" property="id"/>
+    	<result column="name" property="name"/>
+    </association>
   </resultMap>
 <select id="selectById" resultMap="TicketResultMap" parameterType="Integer">
-	select * from ticket where id = #{id}
+	select t.*,u.*,tr.* 
+		from ticket t,user u,train tr
+		where t.uid=u.id and t.tid=tr.id and t.id = #{id}
 </select>
 
 <select id="selectByName" resultMap="TicketResultMap" parameterType="String" >
-    select * from ticket where name = #{name}
- </select>
+    select t.*,u.*,tr.* 
+    from ticket t,user u,train tr
+    where t.uid=u.id and t.tid=tr.id and u.name = #{name}
+</select>
+
+<select id="selectByTrain" resultMap="TicketResultMap" parameterType="String" >
+    select t.*,u.*,tr.* 
+    from ticket t,user u,train tr
+    where t.uid=u.id and t.tid=tr.id and tr.name = #{name}
+</select>
 
 <delete id="deleteById" parameterType="Integer">
 	delete from ticket where id = #{id}

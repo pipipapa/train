@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function formSubmit() {    
+		$.ajax({        
+			data:"username=" + $("#username").val().toString() + "&password=" + $("#password").val().toString()+ "&type=" + statu,        
+			type:"post",        
+			url:"/user/login.do",        
+			success:function (response){        
+				if (response=="false") {            
+					$(".error_mes").css("display", "block");            
+					return false;        
+					}        
+				if (response=="true"){                
+					window.location = "index";                
+					return true;           
+					}     
+				}
+		}
+	}
+</script>
+</head>
+<body>
+<form name="subinfo" class="form" method="post">     
+	<div>       
+		<input type="text" required="" id="username" name="username" placeholder="username" class="input input_user"/>     
+	</div>     
+	<div class="two">      
+		<input type="password" required="" id="password" name="password" placeholder="password" class="input input_password"/>     
+	</div>    
+	<div class="error_mes">      
+		<span class="error-icon"></span>      
+		<span class="error-message">用户名或者密码错误，请重新输入</span>    
+	</div>      
+	<button type="reset" class="btn-login" title="登录" >重置</button>     
+	<button type="button" class="btn-login" title="登录" onclick="formSubmit()">登录</button> 
+</form>
+</body>
+</html>
