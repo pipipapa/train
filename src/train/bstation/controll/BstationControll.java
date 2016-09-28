@@ -1,5 +1,6 @@
 package train.bstation.controll;
 
+import java.io.PrintWriter;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.sun.org.apache.xpath.internal.operations.Mod;
 
+import net.sf.json.JSONArray;
 import train.bstation.dao.vo.Bstation;
 import train.bstation.service.BstationService;
 import train.station.dao.vo.Station;
@@ -106,7 +108,14 @@ public class BstationControll {
 	}
 	
 	
-	
+	@RequestMapping("admin/QueryNextBySelfName")
+	public void QueryNextBySelfName(String sname,PrintWriter out)
+	{
+		String[] bstr=service.QueryBySelfName(sname);
+		JSONArray bjson=JSONArray.fromObject(bstr);
+		System.out.println(bjson);
+		out.print(bjson);
+	}
 	
 	
 	

@@ -66,7 +66,9 @@ public class LineAction {
 	public ModelAndView toUpdate(int id)
 	{
 		ModelAndView mv=new ModelAndView();
+		List<Station> slist=stationservice.QueryAll();
 		Line l=service.QueryById(id);
+		mv.addObject("slist", slist);
 		mv.addObject("l", l);
 		mv.setViewName("admin/UpdateLine0");
 		return mv;

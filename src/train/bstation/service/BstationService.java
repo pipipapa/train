@@ -63,4 +63,18 @@ public class BstationService implements BstationMapper {
 		return bstation;
 	}
 
+	@Override
+	public String[] QueryBySelfName(String selfName) {
+
+		String[] bstr=mapper.QueryBySelfName(selfName);
+		return bstr;
+	}
+
+	@Override
+	public String[] QueryByNextName(String nextName) {
+
+		String[] bstr=mapper.QueryByNextName(nextName);
+		return bstr;
+	}
+
 }

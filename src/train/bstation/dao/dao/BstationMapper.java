@@ -13,7 +13,11 @@ public interface BstationMapper {
 	
 	public List<Bstation> QueryBySelf(int selfstation);
 	
+	public String[] QueryBySelfName(String selfName);
+	
 	public List<Bstation> QueryByNext(int nextstation);
+	
+	public String[] QueryByNextName(String nextName);
 	
 	public Bstation QueryById(int id);
 	

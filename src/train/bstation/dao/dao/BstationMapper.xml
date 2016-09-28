@@ -18,8 +18,16 @@
   	select * from bstation where selfstation=#{selfstation}
   </select>
   
+  <select id="QueryBySelfName" resultType="String" parameterType="String">
+  	select NextName from bstation where SelfName=#{SelfName}
+  </select>
+  
   <select id="QueryByNext" resultType="Bstation" parameterType="int">
   	select * from bstation where nextstation=#{nextstation}
+  </select>
+  
+  <select id="QueryByNextName" resultType="String" parameterType="String">
+  	select SelfName from bstation where NextName=#{NextName}
   </select>
   
   <delete id="delete" parameterType="int">

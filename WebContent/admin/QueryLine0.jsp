@@ -15,43 +15,16 @@
 	
 	<table class="table" style="width:100%;margin: 0px;">
 	       <tr>
-	        <th>路线名称</th>
-	        <th>始发站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th>下一站</th>
-	        <th width="130px">操作</th>
+	        <th width="40px">路线名称</th>
+	        <th width="10px">始发站</th>
+	        
+	        <c:forEach begin="0" end="33">
+	        	<th width="10px">下一站</th>
+	        </c:forEach>
+	        
+	        
+	        
+	        <th width="200px">操作</th>
 	       </tr>
 	       <c:forEach var="l" items="${llist}">
 		       <tr>
