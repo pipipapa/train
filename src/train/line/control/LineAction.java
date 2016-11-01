@@ -79,6 +79,7 @@ public class LineAction {
 	{
 		ModelAndView mv=new ModelAndView();
 		service.update(l);
+		System.out.println(l.getId());
 		mv.setViewName("redirect:QueryLine");
 		return mv;
 	}

@@ -7,6 +7,8 @@ public class Train {
 	
 	private String name;
 	
+	private int lid;
+	
 	private String sstation;
 	
 	private String estation;
@@ -14,6 +16,8 @@ public class Train {
 	private Date stime;
 	
 	private Date etime;
+	
+	private int number;
 
 	public int getId() {
 		return id;
@@ -61,6 +65,22 @@ public class Train {
 
 	public void setEtime(Date etime) {
 		this.etime = etime;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	public int getLid() {
+		return lid;
+	}
+
+	public void setLid(int lid) {
+		this.lid = lid;
 	}
 	
 	

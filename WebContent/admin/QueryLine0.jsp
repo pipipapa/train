@@ -15,16 +15,16 @@
 	
 	<table class="table" style="width:100%;margin: 0px;">
 	       <tr>
-	        <th width="40px">路线名称</th>
-	        <th width="10px">始发站</th>
+	        <th width="60px">路线名称</th>
+	        <th width="10px">始<br>发<br>站</th>
 	        
-	        <c:forEach begin="0" end="33">
-	        	<th width="10px">下一站</th>
+	        <c:forEach begin="0" end="30">
+	        	<th width="8px">下<br>一<br>站</th>
 	        </c:forEach>
 	        
 	        
 	        
-	        <th width="200px">操作</th>
+	        <th width="40px">操作</th>
 	       </tr>
 	       <c:forEach var="l" items="${llist}">
 		       <tr>
@@ -61,12 +61,9 @@
 		        <td>${l.station30}</td>
 		        <td>${l.station31}</td>
 		        <td>${l.station32}</td>
-		        <td>${l.station33}</td>
-		        <td>${l.station34}</td>
-		        <td>${l.station35}</td>
-		        <td>
-		         <a href="toUpdateLine?id=${l.id}" class="inner_btn">修改</a>
-		         <a href="DeleteLine?id=${l.id}" class="inner_btn">删除</a>
+		        <td><br>
+		         <a href="toUpdateLine?id=${l.id}" class="">修改</a><br><br>
+		         <a href="DeleteLine?id=${l.id}" class="">删除</a><br><br>
 		        </td>
 		       </tr>
 	       </c:forEach>
