@@ -9,10 +9,6 @@ public class Train {
 	
 	private int lid;
 	
-	private String sstation;
-	
-	private String estation;
-	
 	private Date stime;
 	
 	private Date etime;
@@ -33,22 +29,6 @@ public class Train {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getSstation() {
-		return sstation;
-	}
-
-	public void setSstation(String sstation) {
-		this.sstation = sstation;
-	}
-
-	public String getEstation() {
-		return estation;
-	}
-
-	public void setEstation(String estation) {
-		this.estation = estation;
 	}
 
 	public Date getStime() {

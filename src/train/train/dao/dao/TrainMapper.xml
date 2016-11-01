@@ -5,6 +5,39 @@
 <mapper namespace="train.train.dao.dao.TrainMapper">
 
 
+<select id="QueryAll" resultType="Train">
 
+	select * from train
+
+</select>
+
+<insert id="add" parameterType="Train">
+
+	insert into train values 
+		(null,#{name},#{lid},#{stime},#{etime},#{number})
+
+</insert>
+
+<delete id="delete" parameterType="int">
+
+	delete from train where id=#{id}
+
+</delete>
+
+<update id="update" parameterType="Train">
+
+	update train set name=#{name},
+					lid=#{lid},
+					stime=#{stime},
+					etime=#{etime},
+					number=#{number} where id=#{id}
+
+</update>
+
+<select id="QueryById" resultType="Train" parameterType="int">
+
+	select * from train where id=#{id}
+
+</select>
 
 </mapper>
