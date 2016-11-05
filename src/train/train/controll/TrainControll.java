@@ -1,5 +1,6 @@
 package train.train.controll;
 
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,15 +27,18 @@ public class TrainControll {
 	{
 		ModelAndView mv=new ModelAndView();
 		List<Train> tlist=service.QueryAll();
+		List<Line> llist=lineservice.QueryAll();
 		mv.addObject("tlist",tlist);
+		mv.addObject("llist",llist);
 		mv.setViewName("admin/QueryTrain0");
 		return mv;
 	}
-	
-	@RequestMapping("admin/AddTrain")
-	public ModelAndView Add(Train t)
+
+	@RequestMapping("/admin/AddTrain")
+	public ModelAndView Add(Train t,String eetime)
 	{
 		ModelAndView mv=new ModelAndView();
+		System.out.println(eetime);
 		service.add(t);
 		mv.setViewName("redirect:QueryTrain");
 		return mv;
@@ -63,7 +67,7 @@ public class TrainControll {
 	public ModelAndView update(Train t)
 	{
 		ModelAndView mv=new ModelAndView();
-		service.add(t);
+		service.update(t);
 		mv.setViewName("redirect:QueryTrain");
 		return mv;
 		

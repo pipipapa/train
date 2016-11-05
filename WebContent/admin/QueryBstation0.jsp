@@ -25,7 +25,7 @@
 	        <th>操作</th>
 	       </tr>
 	       <c:forEach var="b" items="${blist}">
-		       <tr>
+		       <tr height="40px">
 		        <td>${b.time}</td>
 		        <td>${b.selfname}</td>
 		        <td>${b.nextname}</td>

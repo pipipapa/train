@@ -1,8 +1,11 @@
 package train.train.dao.vo;
 
-import java.sql.Date;
+
+import java.util.Date;
+
 
 public class Train {
+	
 	private int id;
 	
 	private String name;
@@ -31,22 +34,6 @@ public class Train {
 		this.name = name;
 	}
 
-	public Date getStime() {
-		return stime;
-	}
-
-	public void setStime(Date stime) {
-		this.stime = stime;
-	}
-
-	public Date getEtime() {
-		return etime;
-	}
-
-	public void setEtime(Date etime) {
-		this.etime = etime;
-	}
-
 	public int getNumber() {
 		return number;
 	}
@@ -61,6 +48,22 @@ public class Train {
 
 	public void setLid(int lid) {
 		this.lid = lid;
+	}
+
+	public Date getEtime() {
+		return etime;
+	}
+
+	public void setEtime(Date etime) {
+		this.etime = etime;
+	}
+
+	public Date getStime() {
+		return stime;
+	}
+
+	public void setStime(Date stime) {
+		this.stime = stime;
 	}
 	
 	

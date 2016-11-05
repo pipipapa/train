@@ -20,7 +20,7 @@
 	        <th>操作</th>
 	       </tr>
 	       <c:forEach var="s" items="${slist}">
-		       <tr>
+		       <tr height="40px">
 		        <td>${s.name}</td>
 		        <td>${s.time}</td>
 		        <td>
