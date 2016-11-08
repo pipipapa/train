@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
-	<h2>相邻站点列表</h2>
+	<h2>路线列表</h2>
 	<a href="toAddLine" style="margin-left: 60%;margin-bottom: 10px;"><input type="button" value="添加路线" class="group_btn"/></a><br>
 	
 	<table class="table" style="width:100%;margin: 0px;">
@@ -24,7 +24,7 @@
 	        
 	        
 	        
-	        <th width="40px">操作</th>
+	        <th width="50px">操作</th>
 	       </tr>
 	       <c:forEach var="l" items="${llist}">
 		       <tr>

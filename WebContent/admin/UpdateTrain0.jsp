@@ -8,27 +8,27 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>新增车次</title>
+<title>修改车次</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <script type="text/javascript" src="js/jquery.js"></script>
 </head>
 <body>
-	<h2>新增车次</h2>
+	<h2>修改车次</h2>
 	<form action="UpdateTrain" method="post" class="leftform">
 		<input name="id" type="hidden" value="${t.id}">
-	    <input name="name" type="text" value="${t.name}" id="name" class="textbox textbox_295" placeholder="车次名称"/></br>
-	    <select name="lid" class="select">
+	    车次名称：<input name="name" type="text" value="${t.name}" id="name" class="textbox textbox_295" placeholder="车次名称"/></br>
+	    选择线路：<select name="lid" class="select">
 	    	<option value="${t.lid}">请选择线路</option>
 	    	<c:forEach var="l" items="${llist}">
 	    	<option value="${l.id}">${l.name}</option>
 	    	</c:forEach>
 	    </select><br>
 	    
-	    <input name="stime" placeholder="发车时间" type="text" class="textbox textbox_295" id="creattimeid" size="13" value='<fmt:formatDate value="${t.stime}" pattern="yyyy/MM/dd HH:mm" />'  onclick="setDate(this,'yyyy/MM/dd HH:mm')"><br> 
-	    <input name="etime" placeholder="到站时间" type="text" class="textbox textbox_295" id="creattimeid" size="13" value='<fmt:formatDate value="${t.etime}" pattern="yyyy/MM/dd HH:mm" />'  onclick="setDate(this,'yyyy/MM/dd HH:mm')"><br> 
+	    发车时间：<input name="stime" placeholder="发车时间" type="text" class="textbox textbox_295" id="creattimeid" size="13" value='<fmt:formatDate value="${t.stime}" pattern="yyyy/MM/dd HH:mm" />'  onclick="setDate(this,'yyyy/MM/dd HH:mm')"><br> 
+	    到站时间：<input name="etime" placeholder="到站时间" type="text" class="textbox textbox_295" id="creattimeid" size="13" value='<fmt:formatDate value="${t.etime}" pattern="yyyy/MM/dd HH:mm" />'  onclick="setDate(this,'yyyy/MM/dd HH:mm')"><br> 
 	    
 	    
-	    <input name="number" type="text" value="${t.number}" class="textbox textbox_295" placeholder="票数"/><br>
+	    火车票数：<input name="number" type="text" value="${t.number}" class="textbox textbox_295" placeholder="票数"/><br>
 	    
 	    <input type="submit" value="提交" class="group_btn"/><br>
 	</form>

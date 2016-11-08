@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8"/>
-<title>后台管理系统</title>
+<title>火车票售票后台管理系统</title>
 <meta name="author" content="DeathGhost" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <!--[if lt IE 9]>
@@ -38,75 +38,49 @@
 <header>
  <h1><img src="images/admin_logo.png"/></h1>
  <ul class="rt_nav">
-  <li><a href="http://h2design.taobao.com/" target="_blank" class="website_icon">站点首页</a></li>
-  <li><a href="#" class="admin_icon">DeathGhost</a></li>
-  <li><a href="#" class="set_icon">账号设置</a></li>
-  <li><a href="login.php" class="quit_icon">安全退出</a></li>
+  <li><a href="homepage.html" target="window" class="website_icon">站点首页</a></li>
+<!--   <li><a href="#" class="admin_icon">DeathGhost</a></li>
+  <li><a href="#" class="set_icon">账号设置</a></li> -->
+  <li><a href="javascript:window.close();" class="quit_icon">安全退出</a></li>
  </ul>
 </header>
 
 <!--aside nav-->
 <aside class="lt_aside_nav content mCustomScrollbar">
- <h2><a href="homepage.html" target="window">管理界面首页</a></h2>
+ <h2><a href="homepage.html" target="window">返回首页</a></h2>
  <ul>
   <li>
    <dl>
     <dt>站点管理</dt>
     <!--当前链接则添加class:active-->
-    <dd><a href="QueryStation" class="active" target="window">站点信息</a></dd>
-    <dd><a href="QueryBstation" target="window">相邻站点</a></dd>
+    <dd><a href="QueryStation" target="window">站点信息</a></dd>
+    <dd><a href="AddStation0.html" target="window">添加站点</a></dd>
+   </dl>
+  </li>
+  <li>
+   <dl>
+    <dt>相邻站点管理</dt>
+    <dd><a href="QueryBstation" target="window">相邻站点信息</a></dd>
+    <dd><a href="toAddBstation" target="window">添加相邻站点</a></dd>
+   </dl>
+  </li>
+  <li>
+   <dl>
+    <dt>线路管理</dt>
     <dd><a href="QueryLine" target="window">线路信息</a></dd>
+    <dd><a href="toAddLine" target="window">添加线路</a></dd>
+   </dl>
+  </li>
+  <li>
+   <dl>
+    <dt>车次管理</dt>
     <dd><a href="QueryTrain" target="window">车次信息</a></dd>
+    <dd><a href="toAddTrain" target="window">添加车次</a></dd>
    </dl>
   </li>
-  <li>
-   <dl>
-    <dt>订单信息</dt>
-    <dd><a href="#" target="window">订单列表</a></dd>
-    <dd><a href="#" target="window">添加订单</a></dd>
-    <dd><a href="#" target="window">缺货登记</a></dd>
-   </dl>
-  </li>
-  <li>
-   <dl>
-    <dt>会员管理</dt>
-    <dd><a href="#" target="window">会员列表</a></dd>
-    <dd><a href="#" target="window">添加会员</a></dd>
-    <dd><a href="#" target="window">会员等级</a></dd>
-    <dd><a href="#" target="window">资金管理</a></dd>
-   </dl>
-  </li>
-  <li>
-   <dl>
-    <dt>基础设置</dt>
-    <dd><a href="#" target="window">站点基础设置</a></dd>
-    <dd><a href="#" target="window">SEO设置</a></dd>
-    <dd><a href="#" target="window">SQL语句查询</a></dd>
-    <dd><a href="#" target="window">模板管理</a></dd>
-   </dl>
-  </li>
-  <li>
-   <dl>
-    <dt>营销管理</dt>
-    <dd><a href="#" target="window">订阅列表</a></dd>
-    <dd><a href="#" target="window">邮件群发</a></dd>
-    <dd><a href="#" target="window">优惠打折</a></dd>
-   </dl>
-  </li>
-  <li>
-   <dl>
-    <dt>配送与支付设置</dt>
-    <dd><a href="#" target="window">配送方式</a></dd>
-    <dd><a href="#" target="window">支付方式</a></dd>
-   </dl>
-  </li>
-  <li>
-   <dl>
-    <dt>在线统计</dt>
-    <dd><a href="#" target="window">流量统计</a></dd>
-    <dd><a href="#" target="window">销售额统计</a></dd>
-   </dl>
-  </li>
+   
+  
+
   <li>
    <p class="btm_infor">© pipipapa 版权所有</p>
   </li>
