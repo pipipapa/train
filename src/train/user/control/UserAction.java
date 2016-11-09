@@ -2,6 +2,7 @@ package train.user.control;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -16,25 +17,24 @@ import train.user.service.UserService;
 import train.util.ServiceException;
 
 @Controller
-@RequestMapping(value="/user")
 public class UserAction {
 	@Autowired
 	private UserService uService;
 	
-	@RequestMapping(value="/isEmailAvailable")
+	@RequestMapping(value="/user/isEmailAvailable")
 	public ModelAndView isEmailAvailable(HttpServletResponse resp,String email,String identify,HttpSession session) throws IOException{
 		resp.setContentType("text/html;charset=utf-8");
 		PrintWriter out = resp.getWriter();
 		try {
 			uService.insert(email,identify,session);
-			out.print("<script language=\"javascript\">alert('×¢²á³É¹¦£¬ÇëÇ°ÍùÓÊÏä½øÐÐÑéÖ¤');window.location.href='http://mail.qq.com'</script>");//
+			out.print("<script language=\"javascript\">alert('×¢ï¿½ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤');window.location.href='http://mail.qq.com'</script>");//
 		} catch (ServiceException e) {
 			out.print("<script language=\"javascript\">alert('"+e.getMessage()+"');window.location.href='register.html'</script>");//
 		}
 		return null;
 	}
 	
-	@RequestMapping(value="/activate")
+	@RequestMapping(value="/user/activate")
 	public ModelAndView activate(String email,String validateCode, HttpServletResponse resp,ModelAndView mav, HttpSession session) throws IOException{
 		resp.setContentType("text/html;charset=utf-8");
 		PrintWriter out = resp.getWriter();
@@ -48,7 +48,7 @@ public class UserAction {
 		return null;
 	}
 	
-	@RequestMapping(value="/setPass")
+	@RequestMapping(value="/user/setPass")
 	public void setPass(HttpServletResponse resp,String pass,String repass,HttpSession session) throws IOException{
 		resp.setContentType("text/html;charset=utf-8");
 		PrintWriter out = resp.getWriter();
@@ -60,7 +60,7 @@ public class UserAction {
 		}
 	}
 	
-	@RequestMapping(value="/dologin")
+	@RequestMapping(value="/user/dologin")
 	public ModelAndView dologin(HttpServletResponse resp,String email,String password,HttpSession session) throws IOException{
 		resp.setContentType("text/html;charset=utf-8");
 		PrintWriter out = resp.getWriter();
@@ -73,4 +73,15 @@ public class UserAction {
 		}
 		return null;
 	}
+	
+	@RequestMapping("conductor/QueryUser")
+	public ModelAndView QueryUser()
+	{
+		ModelAndView mv=new ModelAndView();
+		List<User> ulist=uService.queryAll();
+		mv.addObject("ulist", ulist);
+		mv.setViewName("conductor/QueryTraveller");
+		return mv;
+	}
+	
 }

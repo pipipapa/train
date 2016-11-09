@@ -1,5 +1,7 @@
 package train.user.service;
 
+import java.util.List;
+
 import javax.mail.MessagingException;
 import javax.mail.internet.AddressException;
 import javax.servlet.http.HttpSession;
@@ -19,6 +21,11 @@ public class UserService {
 	@Autowired
 	UserMapper umapper;
 
+	public List<User> queryAll()
+	{
+		return umapper.queryAll();
+	}
+	
 	public void insert(String email, String identify, HttpSession session) throws ServiceException {
 		String safecode = (String)session.getAttribute("safecode");
 		if(safecode.equals(identify)){
@@ -27,7 +34,7 @@ public class UserService {
 				u = new User();
 				u.setEmail(email);
 				u.setType(1);
-				StringBuffer sb=new StringBuffer("µã»÷ÏÂÃæÁ´½Ó¼¤»îÕËºÅ£¬48Ð¡Ê±ÉúÐ§£¬·ñÔòÖØÐÂ×¢²áÕËºÅ£¬Á´½ÓÖ»ÄÜÊ¹ÓÃÒ»´Î£¬Çë¾¡¿ì¼¤»î£¡</br>");  
+				StringBuffer sb=new StringBuffer("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½ï¿½ï¿½ï¿½ËºÅ£ï¿½48Ð¡Ê±ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ËºÅ£ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½Ê¹ï¿½ï¿½Ò»ï¿½Î£ï¿½ï¿½ë¾¡ï¿½ì¼¤ï¿½î£¡</br>");  
 				sb.append("<a href=\"http://localhost:8080/train/user/activate?email=");  
 				sb.append(u.getEmail());   
 				sb.append("&validateCode=");   
@@ -48,41 +55,41 @@ public class UserService {
 					e.printStackTrace();
 				}
 			}else{
-				throw new ServiceException("ÕËºÅÒÑ×¢²á");
+				throw new ServiceException("ï¿½Ëºï¿½ï¿½ï¿½×¢ï¿½ï¿½");
 			}
 		}else{
-			throw new ServiceException("ÑéÖ¤Âë´íÎó");
+			throw new ServiceException("ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½");
 		}
 	}
 	
 	/** 
-     * ´¦Àí¼¤»î 
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
      * @throws ParseException  
      */  
-      ///´«µÝ¼¤»îÂëºÍemail¹ýÀ´  
+      ///ï¿½ï¿½ï¿½Ý¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½emailï¿½ï¿½ï¿½ï¿½  
 	@Transactional
     public User processActivate(String email , String validateCode)throws ServiceException{    
-         //Êý¾Ý·ÃÎÊ²ã£¬Í¨¹ýemail»ñÈ¡ÓÃ»§ÐÅÏ¢  
+         //ï¿½ï¿½ï¿½Ý·ï¿½ï¿½Ê²ã£¬Í¨ï¿½ï¿½emailï¿½ï¿½È¡ï¿½Ã»ï¿½ï¿½ï¿½Ï¢  
         User user=umapper.queryByEmail(email);  
-        //ÑéÖ¤ÓÃ»§ÊÇ·ñ´æÔÚ   
+        //ï¿½ï¿½Ö¤ï¿½Ã»ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½   
         if(user!=null) {    
-            //ÑéÖ¤ÓÃ»§¼¤»î×´Ì¬    
+            //ï¿½ï¿½Ö¤ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬    
             if(user.getType()==1) {   
-                ///Ã»¼¤»î  
-                    //ÑéÖ¤¼¤»îÂëÊÇ·ñÕýÈ·    
+                ///Ã»ï¿½ï¿½ï¿½ï¿½  
+                    //ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½È·    
                     if(validateCode.equals(MD5Util.encode2hex(user.getEmail()))) {    
-                        //¼¤»î³É¹¦£¬ //²¢¸üÐÂÓÃ»§µÄ¼¤»î×´Ì¬£¬ÎªÒÑ¼¤»î   
-                        user.setType(2);//°Ñ×´Ì¬¸ÄÎª¼¤»î  
+                        //ï¿½ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½ //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½Îªï¿½Ñ¼ï¿½ï¿½ï¿½   
+                        user.setType(2);//ï¿½ï¿½×´Ì¬ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½  
                         umapper.updateByEmail(user);
                         return user;
                     } else {    
-                       throw new ServiceException("¼¤»îÂë²»ÕýÈ·");    
+                       throw new ServiceException("ï¿½ï¿½ï¿½ï¿½ï¿½ë²»ï¿½ï¿½È·");    
                     }  
             } else {  
-               throw new ServiceException("ÓÊÏäÒÑ¼¤»î£¬ÇëµÇÂ¼£¡");    
+               throw new ServiceException("ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¼ï¿½ï¿½î£¬ï¿½ï¿½ï¿½Â¼ï¿½ï¿½");    
             }    
         } else {  
-            throw new ServiceException("¸ÃÓÊÏäÎ´×¢²á£¨ÓÊÏäµØÖ·²»´æÔÚ£©£¡");    
+            throw new ServiceException("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î´×¢ï¿½á£¨ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½");    
         }    
     }
 
@@ -93,10 +100,10 @@ public class UserService {
 				u.setPass(pass);
 				umapper.updateByEmail(u);
 			}else{
-				throw new ServiceException("ÃÜÂë²»ÏàÍ¬");
+				throw new ServiceException("ï¿½ï¿½ï¿½ë²»ï¿½ï¿½Í¬");
 			}
 		}else{
-			throw new ServiceException("ÃÜÂë²»ÄÜÎª¿Õ");
+			throw new ServiceException("ï¿½ï¿½ï¿½ë²»ï¿½ï¿½Îªï¿½ï¿½");
 		}
 	}
 
@@ -106,10 +113,10 @@ public class UserService {
 			if(u.getPass().equals(password)){
 				session.setAttribute("user", u);
 			}else{
-				throw new ServiceException("ÃÜÂë´íÎó");
+				throw new ServiceException("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 			}
 		}else{
-			throw new ServiceException("¸ÃÓÃ»§²»´æÔÚ");
+			throw new ServiceException("ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		}
 	} 
 }

@@ -33,6 +33,18 @@ public class TrainControll {
 		mv.setViewName("admin/QueryTrain0");
 		return mv;
 	}
+	
+	@RequestMapping("conductor/QueryTrain")
+	public ModelAndView QueryAll1()
+	{
+		ModelAndView mv=new ModelAndView();
+		List<Train> tlist=service.QueryAll();
+		List<Line> llist=lineservice.QueryAll();
+		mv.addObject("tlist",tlist);
+		mv.addObject("llist",llist);
+		mv.setViewName("conductor/QueryTrain0");
+		return mv;
+	}
 
 	@RequestMapping("/admin/AddTrain")
 	public ModelAndView Add(Train t,String eetime)

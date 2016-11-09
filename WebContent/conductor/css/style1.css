@@ -1,7 +1,12 @@
 @charset "UTF-8";
 @import url(jquery.mCustomScrollbar.css);
-html{overflow-y:hidden;}
-body{margin:0;height:100%;}
+html{}
+body
+{
+	margin:0;
+	height:100%;
+	text-align: center;
+}
 a:active,a:hover{outline:0}
 button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
 button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
@@ -12,7 +17,7 @@ img{vertical-align:middle;border:0}
 @-ms-viewport{width:device-width}
 html{font-size:50px;-webkit-tap-highlight-color:transparent;height:100%;min-width:320px;overflow-x:hidden}
 body{font-family:"Microsoft YaHei";font-size:.28em;line-height:1;color:#333;background-color:white;}
-.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-weight:500;line-height:1.1}
+.h1,.,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-weight:500;line-height:1.1}
 .h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,.h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small{font-weight:400;line-height:1}
 .h1,.h2,.h3,h1,h2,h3{margin-top:.28rem;margin-bottom:.14rem}
 .h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small{font-size:65%}
@@ -121,13 +126,19 @@ header .rt_nav li .quit_icon:before{content:"Q";}
 .page_title{height:40px;line-height:40px;border-bottom:1px #b6b6b6 solid;margin-bottom:5px;}
 .page_title h2{font-size:15px;font-weight:bold;}
 .page_title .top_rt_btn{display:inline-block;height:30px;line-height:30px;padding:0 15px;border:1px #19a97b solid;border-radius:2px;background:#f8f8f8;color:#19a97b; vertical-align:middle;cursor:pointer;}
-.table{width:100%;}
+.table
+{
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	
+}
 .table th{border:1px #d2d2d2 solid;height:40px;line-height:40px;}
 .table td{border:1px #d2d2d2 solid;padding:10px 8px;}
 .table tr:nth-child(odd){background:#f8f8f8;}
 .table tr:hover{background:#f9f9f9;}
 .table td a{color:#19a97b;margin:0 5px;cursor:pointer;}
-.table td .inner_btn{background:#F9F;color:white;padding:5px 8px;border-radius:2px;}
+.table td .inner_btn{background:#F9F;color:white;padding:6px 8px;border-radius:2px;}
 .table td .inner_btn:hover{background:#ffa4ff;color:#f8f8f8;}
 .table td .cut_title{width:265px;}
 .paging{margin:8px 0;overflow:hidden;text-align:right;}
@@ -192,3 +203,35 @@ header .rt_nav li .quit_icon:before{content:"Q";}
 .loading_icon i:nth-child(4){-webkit-animation:loading_icon 1s ease-in .4s infinite;-moz-animation:loading_icon 1s ease-in .4s infinite;animation:loading_icon 1s ease-in .4s infinite}
 .loading_icon i:nth-child(5){-webkit-animation:loading_icon 1s ease-in .5s infinite;-moz-animation:loading_icon 1s ease-in .5s infinite;animation:loading_icon 1s ease-in .5s infinite}
 .loading_txt mark{background:none;font-size:12px;color:red;}
+
+h2
+{
+	font-size: 30px;
+}
+input
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	vertical-align:middle;
+}
+
+select
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	vertical-align:middle;
+	width:300px;
+}
+
+.error
+{
+	color: red;
+}
+
+form[class="leftform"]
+{
+	text-align: left;
+	margin-left: 35%;
+}
+
+
